@@ -10,7 +10,7 @@ import Career from "../../../Assets/svg/career.svg";
 import { useContext } from "react";
 import { useTheme } from "../../../context/Mycontext";
 import ourComunity from "../../../Assets/svg/ourcomunity.svg";
-import globalCampus from "../../../Assets/svg/globalCampus.svg";
+import globalCampus from "../../../Assets/svg/globalcampus.svg";
 import Image from "next/image";
 
 import { Navbar } from "../../UniversalComponents/navbar/Navbar";
