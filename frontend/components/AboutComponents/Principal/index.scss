@@ -1,0 +1,125 @@
+.principal,
+.director {
+  position: relative;
+  background: #fff;
+  .text {
+    width: 70%;
+    .textarea {
+      background-color: var(--darkgreen);
+      width: 100%;
+      padding-top: 8%;
+      height: 59vw;
+      h3 {
+        width: 29vw;
+        padding-top: 2%;
+        margin-left: 19%;
+        color: #fff;
+        border-top: 5px solid #2f6672;
+      }
+
+      h2 {
+        color: var(--yellow);
+        font-family: "DM Serif Text", serif;
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 29vw;
+        text-transform: capitalize;
+        padding: 1% 0;
+        margin-left: 19%;
+        //         border-top: 5px solid #2f6672;
+      }
+      .h2 {
+        width: 37vw;
+      }
+      p {
+        color: #fff;
+        padding-bottom: 2%;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        line-height: 1.4vw;
+        margin-left: 19%;
+        font-size: 1vw;
+        width: 35vw;
+      }
+      .p {
+        width: 35.5vw;
+      }
+    }
+  }
+  .photo {
+    position: absolute;
+    top: 12%;
+    left: 52%;
+
+    width: 38%;
+    display: flex;
+    align-items: flex-start;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .principal,
+  .director {
+    .text {
+      .textarea {
+        height: auto;
+        padding: 8% 0;
+
+        .p {
+          font-size: 1.4vw;
+          line-height: 1.7vw;
+        }
+        h2,
+        h3,
+        p,
+        .p {
+          width: 42vw;
+          margin-left: 8%;
+        }
+      }
+    }
+    .photo {
+      top: 19%;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .director,
+  .principal {
+    position: static;
+    .text {
+      width: 100%;
+      .textarea {
+        height: auto;
+        padding: 8% 0;
+        h3,
+        .h2 {
+          margin-left: 10%;
+        }
+        h2 {
+          padding-bottom: 3%;
+        }
+        .p {
+          width: 80%;
+          margin: auto;
+          font-size: 3vw;
+          line-height: 4.4vw;
+        }
+      }
+    }
+    .photo {
+      position: static;
+      width: 80%;
+      margin: auto;
+    }
+  }
+}

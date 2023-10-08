@@ -1,0 +1,73 @@
+.esuring {
+  display: flex;
+  padding: 3% 0;
+  .photo {
+    width: 50%;
+    height: 23vw;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6%;
+    .heading {
+      margin-left: 5%;
+      h2 {
+        color: #000;
+        font-family: " Frank Ruhl Libre", serif;
+        font-size: 2vw;
+        font-style: normal;
+        //         font-weight: 700;
+        line-height: 2vw; /* 133.333% */
+        text-transform: capitalize;
+      }
+    }
+    .details {
+      margin-left: 5%;
+      p {
+        width: 70%;
+        color: #4c4c4c;
+        font-family: "Poppins", sans-serif;
+        font-size: 1vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .points {
+      margin-left: 5%;
+      .point {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        p {
+          margin-left: 4%;
+          color: #4c4c4c;
+          font-family: "Poppins", sans-serif;
+          font-size: 1vw;
+          font-style: normal;
+          width: 110%;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .photo {
+          width: 8%;
+          height: 8%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

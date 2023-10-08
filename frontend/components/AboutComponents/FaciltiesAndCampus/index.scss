@@ -1,0 +1,226 @@
+.facilities {
+  .content-box {
+    .top {
+      display: flex;
+      .text {
+        width: 20%;
+        padding: 2% 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p {
+          color: #4c4c4c;
+          padding-top: 4%;
+          width: 85%;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        h3 {
+          text-align: center;
+          color: #072f32;
+          text-align: center;
+          font-family: "Poppins", serif;
+          font-size: 1vw;
+          //           font-style: normal;
+          //           font-weight: 500;
+          line-height: 1.5vw; /* 144.444% */
+          text-transform: uppercase;
+        }
+        .photo {
+          width: 40%;
+          height: 40%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      .photo {
+        width: 20%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .btm {
+      display: flex;
+      .text {
+        width: 20%;
+        padding: 2% 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p {
+          color: #4c4c4c;
+          padding-top: 4%;
+          width: 85%;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        h3 {
+          text-align: center;
+          color: #072f32;
+          text-align: center;
+          font-family: "Poppins", serif;
+          font-size: 1vw;
+          //           font-style: normal;
+          //           font-weight: 500;
+          line-height: 1.5vw; /* 144.444% */
+          text-transform: uppercase;
+        }
+        .photo {
+          width: 40%;
+          height: 40%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      .photo {
+        width: 20%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .content-box-phone {
+    display: none;
+    .top {
+      display: flex;
+      .text {
+        width: 20%;
+        padding: 2% 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p {
+          color: #4c4c4c;
+          padding-top: 4%;
+          width: 85%;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        h3 {
+          text-align: center;
+          color: #072f32;
+          text-align: center;
+          font-family: "Poppins", serif;
+          font-size: 1vw;
+          //           font-style: normal;
+          //           font-weight: 500;
+          line-height: 1.5vw; /* 144.444% */
+          text-transform: uppercase;
+        }
+        .photo {
+          width: 40%;
+          height: 40%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      .photo {
+        width: 20%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .facilities {
+    .content-box-phone {
+      display: block;
+      .top {
+        // display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .text {
+          padding-bottom: 0;
+          .photo {
+            width: 30%;
+            height: 30%;
+          }
+          width: 40%;
+          padding: 4%;
+          h3 {
+            font-size: 3vw;
+            line-height: 4.5vw;
+            // padding-top: 10px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+        .photo {
+          width: 48%;
+          img {
+            object-fit: cover;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .content-box {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .facilities {
+    .content-box {
+      display: block;
+      .top,
+      .btm {
+        display: block;
+        .text {
+          .photo {
+            width: 30%;
+            height: 30%;
+          }
+          width: 90%;
+          padding: 4%;
+          h3 {
+            font-size: 4vw;
+            line-height: 4.5vw;
+            padding-top: 10px;
+          }
+        }
+        .photo {
+          width: 100%;
+          margin: auto;
+        }
+      }
+    }
+    .content-box-phone {
+      display: none;
+    }
+  }
+}

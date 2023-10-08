@@ -1,0 +1,202 @@
+.problemlearn {
+  background-color: var(--lightgreen);
+  padding: 8% 10%;
+  padding-top: 0;
+  padding-bottom: 0;
+  .content-box {
+    .top-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-start;
+        h2 {
+          color: #000;
+          text-align: right;
+          font-family: "Frank Ruhl Libre", serif;
+          font-size: 1.5vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 2vw;
+          text-transform: uppercase;
+          width: 83%;
+        }
+        p {
+          color: #4c4c4c;
+          text-align: right;
+          font-family: "Poppins", serif;
+          font-size: 1vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: 64.4%;
+          margin-top: 4%;
+        }
+      }
+      .right {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        h2 {
+          color: #000;
+          text-align: left;
+          font-family: "Frank Ruhl Libre", serif;
+          font-size: 1.5vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 2vw;
+          text-transform: uppercase;
+          width: 75%;
+        }
+        p {
+          color: #4c4c4c;
+          text-align: left;
+          font-family: "Poppins", serif;
+          font-size: 1vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: 74.3%;
+          margin-top: 4%;
+        }
+      }
+      .mid {
+        .photo {
+          img {
+            width: 24vw;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+    .btm-area {
+      padding: 6%;
+      // padding-top: 0;
+      .photo {
+        width: 100%;
+        height: 10vw;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .problemlearn {
+    .content-box {
+      .top-area {
+        gap: 22px;
+        .left {
+          p {
+            font-size: 1.3vw;
+          }
+        }
+        .right {
+          p {
+            font-size: 1.3vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) {
+  .problemlearn {
+    .content-box {
+      .top-area {
+        flex-direction: column;
+        gap: 22px;
+        .left {
+          align-items: center;
+          h2 {
+            text-align: center;
+            font-size: 4vw;
+            line-height: normal;
+          }
+          p {
+            margin-top: 2%;
+            width: 100%;
+            text-align: justify;
+            font-size: 3vw;
+          }
+        }
+        .right {
+          align-items: center;
+          h2 {
+            text-align: center;
+            font-size: 4vw;
+            line-height: normal;
+          }
+          p {
+            margin-top: 2%;
+            width: 100%;
+            text-align: justify;
+            font-size: 3vw;
+          }
+        }
+        .mid {
+          .photo {
+            img {
+              width: 55vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .problemlearn {
+    .content-box {
+      .top-area {
+        flex-direction: column;
+        gap: 22px;
+        .left {
+          align-items: center;
+          h2 {
+            text-align: center;
+            font-size: 5vw;
+            line-height: normal;
+          }
+          p {
+            margin-top: 2%;
+            width: 100%;
+            text-align: justify;
+            font-size: 4vw;
+          }
+        }
+        .right {
+          align-items: center;
+          h2 {
+            text-align: center;
+            font-size: 5vw;
+            line-height: normal;
+          }
+          p {
+            margin-top: 2%;
+            width: 100%;
+            text-align: justify;
+            font-size: 4vw;
+          }
+        }
+        .mid {
+          .photo {
+            img {
+              width: 55vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+.header-language {
+  .header-top {
+    height: 33px;
+    display: flex;
+    width: 100%;
+    .header-top-left {
+      // display: none;
+
+      background-color: var(--darkgreen);
+      width: 100%;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+      // justify-content: space-around;
+
+      width: 50%;
+
+      .social-media {
+        ul {
+          margin-left: 62px;
+          display: flex;
+          align-items: center;
+          li {
+            padding: 5px;
+            svg {
+              width: 12px;
+            }
+          }
+        }
+      }
+      .language {
+        margin-right: 31px;
+        div {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .header-top-left:after {
+      content: "";
+      position: absolute;
+      right: -12.5px;
+      width: 24px;
+      height: 24px;
+      transform: rotate(45deg);
+      background-color: var(--darkgreen);
+      overflow: hidden;
+    }
+
+    .header-top-right {
+      display: block;
+      background-color: var(--yellow);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      justify-content: space-between;
+
+      .mail {
+        display: flex;
+        // margin-left: 42px;
+        align-items: center;
+        gap: 4px;
+        font-size: 12px;
+        img {
+          width: 18px;
+        }
+
+        margin-left: 42px;
+        font-size: 15px;
+        gap: 8px;
+        img {
+          width: 22px;
+        }
+      }
+      .phone {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 18px;
+        }
+
+        margin-right: 42px;
+        font-size: 15px;
+        gap: 8px;
+        img {
+          width: 22px;
+        }
+
+        gap: 4px;
+      }
+
+      width: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 990px) {
+  .header-language {
+    .header-top {
+      .header-top-right {
+        .mail {
+          p {
+            font-size: 11px;
+          }
+        }
+        .phone {
+          p {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) {
+  .header-language {
+    .header-top {
+      .header-top-left {
+        width: 100%;
+        // position: static;
+        overflow-x: hidden;
+        .social-media {
+          margin-left: 31px;
+          ul {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .header-top-right {
+        display: none;
+      }
+    }
+  }
+}

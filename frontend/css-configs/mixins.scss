@@ -1,0 +1,29 @@
+// fonts
+$dm: "DM Serif Text", serif;
+$poppin: "Poppins", sans-serif;
+$segoe: "Segoe UI", sans-serif;
+$frank: "Frank Ruhl Libre", serif;
+
+// colors
+$black: #000;
+$white: #fff;
+
+// some repeted css
+@mixin fr() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// font size
+
+// breakpoints
+$xs: 475px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+$miw: min-width;
+$maw: max-width;

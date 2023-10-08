@@ -1,0 +1,162 @@
+@import "../../../css-configs/mixins.scss";
+.bpharma {
+  position: relative;
+  background: #fff;
+  .text {
+    width: 70%;
+    .textarea {
+      background-color: var(--darkgreen);
+      width: 100%;
+      padding-top: 6%;
+      height: 48vw;
+
+      h2 {
+        color: var(--yellow);
+        font-family: "DM Serif Text", serif;
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 29vw;
+        text-transform: capitalize;
+        padding: 3% 0;
+        margin-left: 19%;
+        border-top: 5px solid #2f6672;
+        padding-top: 4%;
+        //         border-top: 5px solid #2f6672;
+      }
+      .h2 {
+        width: 37vw;
+      }
+      p {
+        color: #fff;
+        padding-bottom: 2%;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        line-height: 1.4vw;
+        margin-left: 19%;
+        font-size: 0.9vw;
+        width: 29vw;
+      }
+      .p {
+        width: 35.5vw;
+      }
+    }
+  }
+  .photo {
+    position: absolute;
+    top: 12%;
+    left: 46%;
+
+    width: 41%;
+    display: flex;
+    align-items: flex-start;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.boverview {
+  // background-color: var(--lightgreen);
+  padding-top: 4%;
+  .heading {
+    h1 {
+      color: #000;
+      text-align: center;
+      font-family: "Frank Ruhl Libre", serif;
+      font-size: 2vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2vw; /* 133.333% */
+      text-transform: capitalize;
+    }
+  }
+  .photo {
+    width: 90%;
+    margin: auto;
+    //     height: 40vw;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .owlphoto {
+    width: 12%;
+    margin: auto;
+    margin: 2% auto;
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .boverview {
+    .photo {
+      width: 95%;
+    }
+  }
+  .bpharma {
+    .text {
+      .textarea {
+        p {
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) {
+  .boverview {
+    .heading {
+      h1 {
+        font-size: 5vw;
+        line-height: 6vw;
+      }
+    }
+    .photo {
+      display: none;
+    }
+    .owlphoto {
+      width: 20%;
+    }
+  }
+  .bpharma {
+    position: static;
+    .text {
+      width: 100%;
+      .textarea {
+        padding: 6% 0;
+        height: auto;
+        h2 {
+          margin: auto;
+          width: 86%;
+          font-size: 6vw;
+          line-height: 6.6vw;
+          text-align: center;
+        }
+        p {
+          width: 80%;
+          text-align: justify;
+          margin: auto;
+          line-height: 5vw;
+          font-size: 2.7vw;
+          padding-bottom: 4%;
+        }
+      }
+    }
+    .photo {
+      position: static;
+      height: auto;
+      width: 100%;
+    }
+  }
+}

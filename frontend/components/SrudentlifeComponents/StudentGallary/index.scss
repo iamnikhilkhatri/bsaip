@@ -1,0 +1,55 @@
+@import "../../../css-configs/mixins.scss";
+.images {
+  display: flex;
+  padding: 80px 150px;
+  .left,
+  .center,
+  .right {
+    width: 32%;
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .photo {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media only screen and ($maw: $lg) {
+  .images {
+    padding: 55px 75px;
+    .left,
+    .right,
+    .center {
+      gap: 1px;
+    }
+  }
+}
+@media only screen and ($maw: $sm) {
+  .images {
+    padding: 40px 57px;
+    .left,
+    .right,
+    .center {
+      gap: 1px;
+    }
+  }
+}
+@media only screen and ($maw: $xs) {
+  .images {
+    padding: 25px 30px;
+    .left,
+    .right,
+    .center {
+      gap: 1px;
+    }
+  }
+}

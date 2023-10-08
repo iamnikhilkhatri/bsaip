@@ -1,0 +1,174 @@
+.objectivess,
+.keys {
+  width: 100%;
+  display: flex;
+  padding: 4% 0;
+  .photo {
+    width: 50%;
+    display: flex;
+    // height: 64vw;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .text {
+    width: 50%;
+    .top {
+      margin-left: 45px;
+      // padding-top: 80px;
+      .heading {
+        width: 28vw;
+
+        p {
+          color: #000;
+          font-family: "Frank Ruhl Libre", serif;
+          font-size: 2vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 2.3vw; /* 133.333% */
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .btm {
+      // padding-bottom: 80px;
+      margin-left: 45px;
+      margin-top: 4%;
+      p {
+        color: #4c4c4c;
+        font-family: "Poppins", sans-serif;
+        font-size: 1vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-bottom: 4%;
+        width: 34vw;
+      }
+      .special {
+        padding-bottom: 0;
+      }
+    }
+
+    .details {
+      width: 34vw;
+      margin-top: 14px;
+      margin-bottom: 17px;
+      p {
+        color: #4c4c4c;
+        font-family: "Poppins", sans-serif;
+        font-size: 1vw;
+        //           font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .points {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+
+      .each-point {
+        width: 34vw;
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+        img {
+          width: 16px;
+          height: 16px;
+        }
+        p {
+          color: #4c4c4c;
+          font-family: "Poppins", sans-serif;
+          font-size: 1vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .director-text {
+    padding-top: 4%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .objectivess,
+  .keys {
+    .text,
+    .director-text {
+      padding-top: 0;
+      .top {
+        .details {
+          p {
+            font-size: 1.2vw;
+          }
+        }
+        .points {
+          .each-point {
+            p {
+              font-size: 1.2vw;
+            }
+          }
+        }
+      }
+      .btm {
+        p {
+          font-size: 1.2vw;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .objectivess,
+  .keys {
+    flex-direction: column-reverse;
+    .photo {
+      width: 100%;
+    }
+    .text,
+    .director-text {
+      width: 100%;
+      .top {
+        width: 80%;
+        margin: auto;
+        .heading {
+          width: 100%;
+          p {
+            font-size: 4vw;
+            line-height: 4.5vw;
+            text-align: center;
+          }
+        }
+        .details {
+          width: 100%;
+          p {
+            font-size: 2.4vw;
+          }
+        }
+        .points {
+          .each-point {
+            width: 100%;
+            align-items: flex-start;
+            p {
+              font-size: 2.5vw;
+            }
+          }
+        }
+      }
+      .btm {
+        width: 80%;
+        margin: 5% auto;
+
+        p {
+          font-size: 2.4vw;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

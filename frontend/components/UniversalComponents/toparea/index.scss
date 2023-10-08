@@ -1,0 +1,79 @@
+.toparea {
+  position: relative;
+  z-index: 1;
+  .photo {
+    width: 100%;
+    height: 32vw;
+    background: url("../../../Assets/svg/topbg.svg");
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    .menu {
+      // position: relative;
+      z-index: 1;
+      .moremenu {
+        top: 15%;
+      }
+    }
+    .text {
+      margin-top: 8%;
+
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      h2 {
+        color: #fff;
+        font-family: "Frank Ruhl Libre", serif;
+
+        font-style: normal;
+        font-weight: 700;
+        line-height: 102px; /* 121.429% */
+        text-transform: capitalize;
+        font-size: 5vw;
+        line-height: 7vw;
+      }
+      p {
+        color: var(--3, #fff);
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+  .photo::before {
+    content: ""; // ::before and ::after both require content
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.38) 100%);
+  }
+}
+@media only screen and (max-width: 780px) {
+  .toparea {
+    .photo {
+      display: block;
+      height: 50vw;
+      .text {
+        z-index: 0;
+        h2 {
+          font-size: 8vw;
+          line-height: 7vw;
+        }
+        p {
+          font-size: 3vw;
+          line-height: 5vw;
+        }
+      }
+    }
+  }
+}

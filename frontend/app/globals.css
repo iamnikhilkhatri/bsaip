@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  counter-reset: rev 7 straight rev2 7 straight2;
+}
+li {
+  list-style: none;
+}
+:root {
+  --darkgreen: rgba(34, 83, 84, 1);
+  --yellow: rgba(248, 238, 0, 1);
+  --cream: rgba(249, 249, 239, 1);
+  --darkyellow: rgba(248, 238, 0, 1);
+  --brown: #f9f9ef;
+  --lightgreen: rgba(247, 252, 249, 1);
+  --textcolor: #393939;
+}
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Frank+Ruhl+Libre:wght@700&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/segoe-ui-4");

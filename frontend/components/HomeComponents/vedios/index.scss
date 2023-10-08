@@ -1,0 +1,38 @@
+.vedios {
+  padding: 2%;
+  .custom-slide {
+    text-align: center;
+    display: flex;
+    .link {
+      width: 90%;
+      margin: auto;
+      iframe {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .custom-slide h3 {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+  }
+
+  .slick-slide {
+    border: 2px solid red;
+  }
+  .slick-center {
+    // background-color: #e0e0e0;
+    padding: 30px;
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .slick-prev::before {
+    color: red !important;
+  }
+  .slick-next::before {
+    color: red !important;
+  }
+}

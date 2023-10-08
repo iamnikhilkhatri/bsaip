@@ -1,0 +1,152 @@
+@import "../../../css-configs/mixins.scss";
+.egility {
+  background-color: var(--brown);
+  padding: 3% 0;
+  .heading {
+    h2 {
+      color: #000;
+      font-family: $dm;
+      font-size: 3vw;
+      font-style: normal;
+      text-align: center;
+      //       font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    p {
+      width: 64%;
+      margin: auto;
+      color: #4c4c4c;
+      text-align: center;
+      font-family: $poppin;
+      font-size: 1vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 2% 0;
+    }
+  }
+  .table {
+    display: flex;
+    align-items: center;
+    gap: 1.3%;
+    justify-content: center;
+    .thead {
+      color: $black;
+      font-family: $poppin;
+      font-size: 1.5vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    ul {
+      li {
+        color: #4c4c4c;
+        font-family: $poppin;
+        padding: 1% 0;
+        font-size: 1vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        span {
+          color: var(--yellow);
+        }
+      }
+    }
+    .left {
+      background: $white;
+      width: 30%;
+      box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.1);
+      padding: 2%;
+    }
+    .right {
+      background: $white;
+      width: 30%;
+      box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.1);
+      padding: 2%;
+    }
+  }
+  .details {
+    p {
+      padding-top: 3%;
+      width: 65%;
+      margin: auto;
+      color: #4c4c4c;
+      text-align: center;
+      font-family: $poppin;
+      font-size: 1vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+@media only screen and ($maw: $lg) {
+  .egility {
+    .heading {
+      h2 {
+        font-size: 4vw;
+      }
+      p {
+        font-size: 1.5vw;
+      }
+    }
+    .table {
+      .left,
+      .right {
+        width: 40%;
+        .thead {
+          font-size: 2vw;
+        }
+        ul {
+          margin-top: 2%;
+          li {
+            font-size: 1.8vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and ($maw: $sm) {
+  .egility {
+    .heading {
+      width: 90%;
+      margin: auto;
+      h2 {
+        font-size: 4vw;
+      }
+      p {
+        width: 100%;
+        margin-top: 3%;
+        text-align: justify;
+        font-size: 3vw;
+      }
+    }
+    .table {
+      margin-top: 5%;
+      flex-direction: column;
+      gap: 17px;
+      .left,
+      .right {
+        width: 85%;
+        .thead {
+          font-size: 3.5vw;
+        }
+        ul {
+          li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            span {
+              font-size: 3vw;
+            }
+            font-size: 3vw;
+            padding: 2% 0;
+          }
+        }
+      }
+    }
+  }
+}

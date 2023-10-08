@@ -1,0 +1,173 @@
+.whyBsaip {
+  padding: 4% 10%;
+  padding-bottom: 2%;
+  background-color: var(--darkgreen);
+  .main-box {
+    .text {
+      .heading {
+        p {
+          font-family: "DM Serif Text", serif;
+          color: #fff;
+          font-size: 3vw;
+          //           font-style: normal;
+          //           font-weight: 400;
+          line-height: normal;
+          text-transform: capitalize;
+          text-align: center;
+          span {
+            color: var(--yellow);
+            font-style: italic;
+            text-decoration: underline var(--yellow);
+          }
+        }
+      }
+      .details {
+        margin-top: 2%;
+        p {
+          font-family: "Poppins", sans-serif;
+          color: #fff;
+          text-align: center;
+          font-size: 0.9vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: 63%;
+          margin: auto;
+        }
+      }
+    }
+    .photos {
+      display: flex;
+      //       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2vw;
+
+      .left {
+        padding: 4% 0;
+        border-right: 1px solid #fff;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        align-items: flex-end;
+        .upper {
+          gap: 3%;
+          padding-right: 30px;
+          display: flex;
+          align-items: end;
+          width: 100%;
+          justify-content: flex-end;
+          margin-bottom: 1vw;
+          .img {
+            width: 6%;
+            height: 6%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .number {
+            margin-bottom: 1vw;
+          }
+        }
+        .lower {
+          gap: 3%;
+          padding-right: 30px;
+          display: flex;
+          border-top: 1px solid #fff;
+          align-items: end;
+
+          width: 100%;
+          justify-content: flex-end;
+          padding-top: 1vw;
+          .img {
+            width: 6%;
+            height: 6%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .number {
+            margin-bottom: 1vw;
+          }
+        }
+
+        .p2 {
+          color: #fff;
+          text-align: right;
+          font-family: "Poppins", sans-serif;
+          font-size: 1vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+      }
+      .right {
+        padding: 4% 0;
+        .upper {
+          gap: 3%;
+          display: flex;
+          align-items: end;
+          width: 100%;
+          justify-content: flex-start;
+          padding-left: 30px;
+          margin-bottom: 1vw;
+          .img {
+            width: 6%;
+            height: 6%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .number {
+            margin-bottom: 1vw;
+          }
+        }
+        .lower {
+          display: flex;
+          border-top: 1px solid #fff;
+          align-items: end;
+          gap: 3%;
+
+          width: 100%;
+          padding-left: 30px;
+          justify-content: flex-start;
+          padding-top: 1vw;
+          .img {
+            width: 6%;
+            height: 6%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .number {
+            margin-bottom: 1vw;
+          }
+        }
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .p2 {
+          color: #fff;
+          text-align: left;
+          font-family: "Poppins", sans-serif;
+          font-size: 1vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

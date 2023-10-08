@@ -1,0 +1,66 @@
+.register {
+  background: url("../../../Assets/svg/cta.svg");
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vw;
+  .register-text {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    p {
+      padding-bottom: 1vw;
+    }
+    .yellow {
+      font-family: "Frank Ruhl Libre", serif;
+      color: var(--yellow);
+      text-align: center;
+
+      font-size: 5vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .white {
+      margin-left: 0.3vw;
+      font-family: "Frank Ruhl Libre", serif;
+      color: #fff;
+      text-align: center;
+      font-size: 2vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .btn {
+      padding-top: 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        font-family: "Poppins", sans-serif;
+        color: #000;
+        height: 3.2vw;
+        width: 11vw;
+        font-size: 1vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        background-color: var(--yellow);
+        border: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 780px) {
+  .register {
+    height: 16vw;
+  }
+}

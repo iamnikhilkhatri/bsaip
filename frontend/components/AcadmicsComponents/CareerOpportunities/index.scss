@@ -1,0 +1,210 @@
+@import "../../../css-configs/mixins.scss";
+.career {
+  padding: 3% 0;
+  .content-box {
+    width: 100%;
+    display: flex;
+    .photo {
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      .wrapper {
+        .heading {
+          width: 63%;
+          margin: auto;
+          margin-left: 7%;
+          h1 {
+            color: #000;
+            font-family: "Frank Ruhl Libre", serif;
+            font-size: 2vw;
+            font-style: normal;
+            //           font-weight: 700;
+            line-height: 2vw; /* 133.333% */
+            text-transform: capitalize;
+          }
+          p {
+            padding-top: 3%;
+            color: #393939;
+            font-family: "Poppins", serif;
+            font-size: 1vw;
+            font-style: normal;
+
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .points {
+          .point {
+            width: 78%;
+            margin: auto;
+            margin-left: 7%;
+            li {
+              color: #393939;
+              font-family: "Poppins", sans-serif;
+              font-size: 1vw;
+              font-style: normal;
+              padding: 1% 0;
+              font-weight: 400;
+              line-height: normal;
+              .dot {
+                // vertical-align: sub;
+                color: var(--yellow);
+                font-family: "Poppins", sans-serif;
+                font-size: 2vw;
+                text-align: center;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: auto;
+                width: 90%;
+              }
+              .title {
+                color: #393939;
+
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+              }
+            }
+          }
+        }
+        .subdetails {
+          p {
+            padding-top: 3%;
+            margin-left: 7%;
+            width: 78%;
+            color: #393939;
+            font-family: "Poppins", sans-serif;
+            font-size: 1vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and ($maw: $lg) {
+  .career {
+    .content-box {
+      .text {
+        .wrapper {
+          padding: 30px 0;
+          .heading {
+            width: 80%;
+            p {
+              width: 100%;
+              font-size: 1.5vw;
+              text-align: justify;
+            }
+            h1 {
+              text-align: center;
+              font-size: 3vw;
+              br {
+                content: "";
+              }
+            }
+          }
+          .points {
+            margin-top: 2%;
+            width: 80%;
+            .point {
+              width: 100%;
+              li {
+                width: 100%;
+                font-size: 1.5vw;
+                .title {
+                  font-size: 1.8vw;
+                }
+              }
+            }
+          }
+          .subdetails {
+            p {
+              font-size: 1.5vw;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and ($maw: $sm) {
+  .career {
+    .content-box {
+      flex-direction: column-reverse;
+
+      .photo {
+        width: 100%;
+      }
+      .text {
+        padding-bottom: 4%;
+        width: 100%;
+        .wrapper {
+          margin: auto;
+          width: 80%;
+          .heading {
+            width: 100%;
+            margin: 0;
+            h1 {
+              text-align: center;
+              font-size: 5vw;
+              line-height: 7vw;
+              br {
+                content: "";
+              }
+            }
+            p {
+              width: 100%;
+              font-size: 3vw;
+              text-align: justify;
+            }
+          }
+          .points {
+            margin-top: 6%;
+            width: 100%;
+            .point {
+              width: 100%;
+              margin: 0;
+              margin-top: 4%;
+              li {
+                width: 100%;
+                font-size: 3vw;
+                .dot {
+                  font-size: 20px;
+                }
+                .title {
+                  font-size: 3.5vw;
+                }
+              }
+            }
+          }
+          .subdetails {
+            p {
+              margin-top: 5px;
+              width: 100%;
+              margin: 0;
+              margin-top: 4%;
+              font-size: 3vw;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}
