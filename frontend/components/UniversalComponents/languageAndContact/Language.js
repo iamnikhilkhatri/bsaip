@@ -6,7 +6,7 @@ import img2 from "../../../Assets/svg/linkedin.svg";
 import Image from "next/image";
 import img3 from "../../../Assets/svg/mail.svg";
 import img4 from "../../../Assets/svg/india.svg";
-import img5 from "../../../Assets/svg/vector.svg";
+import img5 from "../../../Assets/svg/Vector.svg";
 import img6 from "../../../Assets/svg/rightmail.svg";
 import img7 from "../../../Assets/svg/phone.svg";
 export const Language = () => {
