@@ -9,7 +9,7 @@ export const Boverview = () => {
       <div className="heading">
         <h1>Course Overview</h1>
       </div>
-      <div className="photo">
+      <div className="photo ">
         <Image src={img} alt="" />
       </div>
       <div className="timeline-box">

@@ -33,9 +33,15 @@
       display: flex;
       flex-direction: column;
       align-items: end;
-      img {
+      .img {
         width: 11vw;
         height: 9vw;
+        display: flex;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
       }
       h6 {
         color: rgba(47, 102, 114, 1);
@@ -84,9 +90,14 @@
       display: flex;
       flex-direction: column;
       align-items: start;
-      img {
+      .img {
         width: 11vw;
         height: 9vw;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
       }
       h6 {
         color: rgba(47, 102, 114, 1);
@@ -135,10 +146,15 @@
     .center {
       margin: 0 2%;
       width: 25%;
-      img {
+      .img {
+        display: flex;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
         width: 100%;
         height: 100%;
-        object-fit: contain;
       }
     }
   }
@@ -179,9 +195,14 @@
       flex-direction: column;
       .left {
         align-items: center;
-        img {
+        .img {
           width: 35vw;
           height: 29vw;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
         h2 {
           font-size: 3vw;
@@ -206,9 +227,14 @@
       }
       .right {
         align-items: center;
-        img {
+        .img {
           width: 35vw;
           height: 29vw;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
         h2 {
           font-size: 3vw;
@@ -252,9 +278,14 @@
       flex-direction: column;
       .left {
         align-items: center;
-        img {
+        .img {
           width: 40vw;
           height: 32vw;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
         h2 {
           font-size: 15px;
@@ -279,9 +310,14 @@
       }
       .right {
         align-items: center;
-        img {
+        .img {
           width: 40vw;
           height: 32vw;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
         h2 {
           font-size: 15px;

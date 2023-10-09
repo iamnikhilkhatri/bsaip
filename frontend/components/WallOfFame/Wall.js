@@ -15,27 +15,27 @@ import wof12 from "../../Assets/svg/wof12.svg";
 import wof13 from "../../Assets/svg/wof13.svg";
 import wof14 from "../../Assets/svg/wof14.svg";
 import wof15 from "../../Assets/svg/wof15.svg";
-import wof from "../../Assets/svg/groupwof.svg";
+import wof from "../../Assets/svg/wof.svg";
 import "./index.scss";
 export const Wall = () => {
   return (
     <div className="wall">
-      <div className="image-box">
-        <Image src={wof} alt="" loading="lazy" />
+      <div className="image-box skeleton">
+        <Image src={wof} width={500} height={500} alt="" loading="lazy" />
         {/* <div className="top">
-          <div className="photo1">
+          <div className="photo1 skeleton">
             <Image loading="lazy" src={wof1} alt="" />
           </div>
-          <div className="photo2">
+          <div className="photo2 skeleton">
             <Image loading="lazy" src={wof2} alt="" />
           </div>
-          <div className="photo3">
+          <div className="photo3 skeleton">
             <Image loading="lazy" src={wof3} alt="" />
           </div>
-          <div className="photo2">
+          <div className="photo2 skeleton">
             <Image loading="lazy" src={wof4} alt="" />
           </div>
-          <div className="photo1">
+          <div className="photo1 skeleton">
             <Image loading="lazy" src={wof5} alt="" />
           </div>
         </div>

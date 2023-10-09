@@ -6,7 +6,7 @@ import "../../Principal/objectives/index.scss";
 export const Keys = () => {
   return (
     <div className="keys">
-      <div className="photo">
+      <div className="photo skeleton">
         <Image src={why} alt=""></Image>
       </div>
       <div className="text director-text">

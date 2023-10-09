@@ -21,16 +21,22 @@ export const LifeAt = () => {
           </div>
         </div>
         <div className="btm">
-          <div className="single">
-            <Image loading="lazy" src={img2} alt="" />
+          <div className="single ">
+            <div className="img skeleton">
+              <Image loading="lazy" src={img2} alt="" />
+            </div>
           </div>
           <div className="double">
-            <Image loading="lazy" src={img3} alt="" />{" "}
-            <Image src={img4} alt="" />
+            <div className=" img skeleton">
+              <Image loading="lazy" src={img3} alt="" />{" "}
+            </div>
+            <div className="img skeleton">
+              <Image src={img4} alt="" />
+            </div>
           </div>
         </div>
       </div>
-      <div className="right">
+      <div className="right skeleton">
         <Image loading="lazy" src={img1} alt="" />
       </div>
     </div>

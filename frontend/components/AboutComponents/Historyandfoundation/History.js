@@ -21,7 +21,7 @@ export const History = () => {
           </p>
         </div>
       </div>
-      <div className="photo">
+      <div className="photo skeleton">
         <Image src={history} alt="" />
       </div>
     </div>

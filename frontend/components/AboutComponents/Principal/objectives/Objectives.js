@@ -6,7 +6,7 @@ import "./index.scss";
 export const Objectives = () => {
   return (
     <div className="objectivess">
-      <div className="photo">
+      <div className="photo skeleton">
         <Image src={why} alt=""></Image>
       </div>
       <div className="text">

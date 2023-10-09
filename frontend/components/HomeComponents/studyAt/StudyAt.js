@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./index.scss";
 import Image from "next/image";
 import mid from "../../../Assets/svg/studyat.svg";
@@ -15,7 +16,9 @@ export const StudyAt = () => {
 
       <div className="content">
         <div className="left">
-          <Image src={left} alt="left"></Image>
+          <div className={`img`}>
+            <Image src={left} alt="left"></Image>
+          </div>
           <h2>B.PHARM</h2>
           <h6>BACHELOR OF PHARMACY</h6>
           <p>
@@ -27,12 +30,16 @@ export const StudyAt = () => {
           <button>VIEW MORE</button>
         </div>
 
-        <div className="center">
-          <Image loading="lazy" src={mid} alt="mid"></Image>
+        <div className="center skeleton">
+          <div className="img">
+            <Image loading="lazy" src={mid} alt="mid"></Image>
+          </div>
         </div>
 
         <div className="right">
-          <Image src={right} alt=""></Image>
+          <div className={`img `}>
+            <Image src={right} alt=""></Image>
+          </div>
           <h2>D.PHARM</h2>
           <h6>DIPLOMA IN PHARMACY</h6>
           <p>

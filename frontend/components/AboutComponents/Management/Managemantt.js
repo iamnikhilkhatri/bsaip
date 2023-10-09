@@ -72,7 +72,9 @@ export default class Management extends Component {
                 <div className="main-box">
                   <div className="bg"></div>
                   <div className="photo">
-                    <Image src={faculty1} alt="" />
+                    <div style={{ width: "74%" }} className="skeleton">
+                      <Image src={faculty1} alt="" />
+                    </div>
                     <div className="name">
                       <p>Nikhil</p>
                     </div>
@@ -84,7 +86,9 @@ export default class Management extends Component {
                 <div className="main-box">
                   <div className="bg"></div>
                   <div className="photo">
-                    <Image src={faculty2} alt="" />
+                    <div style={{ width: "74%" }} className="skeleton">
+                      <Image src={faculty2} alt="" />
+                    </div>
                     <div className="name">
                       <p>Nikhil</p>
                     </div>
@@ -96,7 +100,9 @@ export default class Management extends Component {
                 <div className="main-box">
                   <div className="bg"></div>
                   <div className="photo">
-                    <Image src={faculty3} alt="" />
+                    <div style={{ width: "74%" }} className="skeleton">
+                      <Image src={faculty3} alt="" />
+                    </div>
                     <div className="name">
                       <p>Nikhil</p>
                     </div>
@@ -108,7 +114,9 @@ export default class Management extends Component {
                 <div className="main-box">
                   <div className="bg"></div>
                   <div className="photo">
-                    <Image src={faculty1} alt="" />
+                    <div style={{ width: "74%" }} className="skeleton">
+                      <Image src={faculty1} alt="" />
+                    </div>
                     <div className="name">
                       <p>Nikhil</p>
                     </div>
@@ -122,7 +130,7 @@ export default class Management extends Component {
           <div className="left">
             <Image src={left} alt="" />
           </div>
-          <div className="right">
+          <div className="right ">
             <Image src={right} alt="" />
           </div>
         </div>

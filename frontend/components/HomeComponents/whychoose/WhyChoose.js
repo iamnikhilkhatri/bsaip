@@ -2,11 +2,12 @@ import React from "react";
 import "./index.scss";
 import Image from "next/image";
 import why from "../../../Assets/svg/why.svg";
+// import why2 from "../../../Assets/images/why.png";
 import point from "../../../Assets/svg/point.svg";
 export const WhyChoose = () => {
   return (
     <div className="whychoose">
-      <div className="photo">
+      <div className="photo skeleton">
         <Image loading="lazy" src={why} alt=""></Image>
       </div>
       <div className="text">
@@ -25,7 +26,7 @@ export const WhyChoose = () => {
             </p>
           </div>
           <div className="points">
-            <div className="each-point">
+            <div className="each-point ">
               <Image loading="lazy" src={point} alt="point" />
               <p>Tailored and intentional Education</p>
             </div>

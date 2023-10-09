@@ -32,7 +32,7 @@ export const Explore = () => {
       </div>
 
       <div className="photo">
-        <div className="top">
+        <div className="top skeleton">
           <Image loading="lazy" src={explore} alt="" />
         </div>
         <div className="btm">

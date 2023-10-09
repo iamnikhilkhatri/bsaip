@@ -50,7 +50,7 @@ export const Director = () => {
           </p>
         </div>
       </div>
-      <div className="photo">
+      <div className="photo skeleton">
         <Image src={director} alt=" " />
       </div>
     </div>

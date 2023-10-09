@@ -26,68 +26,68 @@ export const StudentGallery = () => {
   return (
     <div className="images">
       <div className="left">
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={one}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={two}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={three}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={four}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={five}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={six}></Image>
         </div>
       </div>
       <div className="center">
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={seven}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={eight}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={nine}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={ten}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={eleven}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={twelve}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={thirtee}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={fourteen}></Image>
         </div>
       </div>
       <div className="right">
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={fifteen}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={sixteen}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={seventeen}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={eighteen}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={nineteen}></Image>
         </div>
-        <div className="photo">
+        <div className="photo skeleton">
           <Image alt="" loading="lazy" src={twenty}></Image>
         </div>
       </div>
