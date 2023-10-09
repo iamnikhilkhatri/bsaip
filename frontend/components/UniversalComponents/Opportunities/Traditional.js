@@ -29,7 +29,7 @@ export const Traditional = ({ srct }) => {
         </div>
       </div>
       <div className="photo skeleton">
-        <Image src={srct} alt="" />
+        <Image unoptimized src={srct} alt="" />
       </div>
     </div>
   );

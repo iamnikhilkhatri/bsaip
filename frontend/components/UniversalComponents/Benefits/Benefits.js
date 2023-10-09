@@ -20,7 +20,7 @@ export const Benifits = ({ h, p, p1, p2, p3, p4, dp }) => {
         <div className="points">
           <div className="point">
             <div className="photo">
-              <Image src={bnf1} alt="" />
+              <Image unoptimized src={bnf1} alt="" />
             </div>
             <h2>
               Comprehensive <br />
@@ -35,7 +35,7 @@ export const Benifits = ({ h, p, p1, p2, p3, p4, dp }) => {
           </div>
           <div className="point">
             <div className="photo">
-              <Image src={bnf2} alt="" />
+              <Image unoptimized src={bnf2} alt="" />
             </div>
             <h2>
               Skilled <br />
@@ -50,7 +50,7 @@ export const Benifits = ({ h, p, p1, p2, p3, p4, dp }) => {
           </div>
           <div className="point">
             <div className="photo">
-              <Image src={bnf3} alt="" />
+              <Image unoptimized src={bnf3} alt="" />
             </div>
             <h2>
               Modern <br />
@@ -65,7 +65,7 @@ export const Benifits = ({ h, p, p1, p2, p3, p4, dp }) => {
           </div>
           <div className="point">
             <div className="photo">
-              <Image src={bnf4} alt="" />
+              <Image unoptimized src={bnf4} alt="" />
             </div>
             <h2>
               Strong

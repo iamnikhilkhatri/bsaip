@@ -72,21 +72,26 @@ export const Footer = () => {
         <div className="footer-btm">
           <div className="rights">© BSAIP. All Rights Reserved.</div>
           <div className="name">
-            <Image loading="lazy" src={logo} alt="logo"></Image>
+            <Image unoptimized loading="lazy" src={logo} alt="logo"></Image>
           </div>
 
           <div className="social-media">
             <div className="logo">
-              <Image loading="lazy" src={facebook} alt="fb"></Image>
+              <Image unoptimized loading="lazy" src={facebook} alt="fb"></Image>
             </div>
             <div className="logo">
-              <Image loading="lazy" src={insta} alt="insta"></Image>
+              <Image unoptimized loading="lazy" src={insta} alt="insta"></Image>
             </div>
             <div className="logo">
-              <Image loading="lazy" src={linkdin} alt="linkdin"></Image>
+              <Image
+                unoptimized
+                loading="lazy"
+                src={linkdin}
+                alt="linkdin"
+              ></Image>
             </div>
             <div className="logo">
-              <Image loading="lazy" src={tweet} alt="tweet"></Image>
+              <Image unoptimized loading="lazy" src={tweet} alt="tweet"></Image>
             </div>
           </div>
         </div>

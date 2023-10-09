@@ -35,7 +35,7 @@ export const Navbar = () => {
     <div className="nav-box">
       <div className="navbar">
         <div className="logo">
-          <Image loading="lazy" src={logo} alt=""></Image>
+          <Image unoptimized loading="lazy" src={logo} alt=""></Image>
         </div>
         <div className="menu">
           <ul>
@@ -385,7 +385,7 @@ export const Navbar = () => {
           {phoneMenu && (
             <div className="side-menu">
               <div className="phone-logo">
-                <Image loading="lazy" src={logo} alt=""></Image>
+                <Image unoptimized loading="lazy" src={logo} alt=""></Image>
               </div>
               <div className="phone-menu">
                 <div className="menu-list">

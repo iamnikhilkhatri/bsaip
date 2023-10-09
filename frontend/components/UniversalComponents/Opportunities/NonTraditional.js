@@ -29,7 +29,7 @@ export const NonTraditional = ({ src }) => {
         </div>
       </div>
       <div className="photo skeleton">
-        <Image src={src} alt="" />
+        <Image unoptimized src={src} alt="" />
       </div>
     </div>
   );
