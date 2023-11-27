@@ -17,9 +17,10 @@ export const Faculties = ({ id, setId }) => {
   return (
     <div className="faculties">
       <div className="images">
-        {arr.map((e) => {
+        {arr.map((e, index) => {
           return (
             <div
+              key={index}
               style={{ cursor: "pointer" }}
               onClick={() => {
                 router.push("/about/ourFaculties/moreDetails");

@@ -12,9 +12,9 @@ export const Media = () => {
       </div>
       <div className="right">
         <div className="news-boxs">
-          {a.map((e) => {
+          {a.map((e, index) => {
             return (
-              <div className="news-box">
+              <div className="news-box" key={index}>
                 <div className="photo">
                   {" "}
                   <Image src={img2} alt="" />

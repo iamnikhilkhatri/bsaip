@@ -12,9 +12,9 @@ export const Topstories = () => {
         </div>
         <div className="stories">
           <div className="news-boxs">
-            {arr.map((e) => {
+            {arr.map((e, index) => {
               return (
-                <div className="news-box">
+                <div className="news-box" key={index}>
                   <div className="photo">
                     <Image src={img} alt="" />
                   </div>

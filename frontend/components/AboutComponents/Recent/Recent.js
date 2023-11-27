@@ -12,9 +12,9 @@ export const Recent = () => {
         </div>
         <div className="stories">
           <div className="news-boxs">
-            {arr.map((e) => {
+            {arr.map((e, index) => {
               return (
-                <div className="news-box">
+                <div key={index} className="news-box">
                   <div className="photo">
                     <Image src={img} alt="" />
                   </div>
