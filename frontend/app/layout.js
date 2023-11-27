@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         src="https://website-widgets.pages.dev/dist/sienna.min.js"
         defer
       ></Script>
-      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <Script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></Script>
 
       <body>
         {children}{" "}
