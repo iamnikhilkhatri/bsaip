@@ -1,3 +1,4 @@
+"use client";
 import { TopArea } from "../../../components/UniversalComponents/toparea/TopArea";
 import { Language } from "../../../components/UniversalComponents/languageAndContact/Language";
 import React from "react";

@@ -90,3 +90,23 @@
     }
   }
 }
+@media only screen and (max-width: 600px) {
+  .registeration-form {
+    form {
+      .upper,
+      .lower,
+      .mid {
+        input {
+          font-size: 3vw;
+          height: 34px;
+        }
+      }
+      .submit {
+        input {
+          height: 27px;
+          width: 47%;
+        }
+      }
+    }
+  }
+}

@@ -13,16 +13,7 @@ export const Contact = () => {
             <br /> Contact Information
           </h2>
         </div>
-        <div className="call">
-          <div className="photo">
-            <Image src={call} alt=""></Image>
-          </div>
-          <div className="text">
-            <h2 className="h2">Email Us</h2>
-            <p className="p1">Send your mail for general enquiries.</p>
-            <p className="p2">bsaei@anangpuria.com</p>
-          </div>
-        </div>
+
         <div className="email">
           <div className="photo">
             <Image src={gmail} alt=""></Image>
@@ -31,6 +22,16 @@ export const Contact = () => {
             <h2 className="h2">Email Us</h2>
             <p className="p1">Send your mail for general enquiries.</p>
             <p className="p2">bsaei@anangpuria.com</p>
+          </div>
+        </div>
+        <div className="call">
+          <div className="photo">
+            <Image src={call} alt=""></Image>
+          </div>
+          <div className="text">
+            <h2 className="h2">Call Us</h2>
+            <p className="p1">Make a call for your general enquiries.</p>
+            <p className="p2">0129-2206750-53</p>
           </div>
         </div>
       </div>

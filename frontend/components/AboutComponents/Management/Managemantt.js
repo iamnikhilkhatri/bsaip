@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "./index.scss";
 import Image from "next/image";
-
+import Link from "next/link";
 import left from "../../../Assets/svg/left2.svg";
 import right from "../../../Assets/svg/right2.svg";
 import faculty1 from "../../../Assets/svg/faculty1.svg";
@@ -56,14 +56,11 @@ export default class Management extends Component {
         },
       ],
     };
+
     return (
       <div className="management">
         <div className="heading">
-          <h1 className="heading">Our Management Team</h1>
-          <p className="subheading">
-            Reference site about Lorem Ipsum, giving information on its origins,
-            as well as a random Lipsum generator.
-          </p>
+          <h1 className="heading">Our Faculties</h1>
         </div>
         <div className="faculties">
           <div className="container">
@@ -125,11 +122,16 @@ export default class Management extends Component {
               </div>
             </Slider>
           </div>
+          <div className="viewmore">
+            <Link href="/about/ourFaculties">VIEW ALL</Link>
+          </div>
         </div>
-        <div className="slider-movers">
+        <div className="slider-movers-left">
           <div className="left">
             <Image src={left} alt="" />
           </div>
+        </div>
+        <div className="slider-movers-right">
           <div className="right ">
             <Image src={right} alt="" />
           </div>

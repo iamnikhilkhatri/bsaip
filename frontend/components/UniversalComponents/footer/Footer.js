@@ -3,12 +3,18 @@ import React from "react";
 import "./index.scss";
 import { useContext } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import facebook from "../../../Assets/svg/btmfb.svg";
 import insta from "../../../Assets/svg/btminsta.svg";
 import logo from "../../../Assets/svg/anag.svg";
+// import { i18n } from "next-i18next";
 import linkdin from "../../../Assets/svg/btmlinkdin.svg";
 import tweet from "../../../Assets/svg/btmtweet.svg";
-import { Context } from "../../../context/Mycontext";
+// import { Context } from "../../../app/context/Mycontext";
+import { useTransform } from "framer-motion";
+// import { i18n } from "@/next-i18next.config";
+import { changeLanguage } from "i18next";
+
 export const Footer = () => {
   return (
     <div className="footer">
@@ -72,26 +78,21 @@ export const Footer = () => {
         <div className="footer-btm">
           <div className="rights">© BSAIP. All Rights Reserved.</div>
           <div className="name">
-            <Image unoptimized loading="lazy" src={logo} alt="logo"></Image>
+            <Image loading="lazy" src={logo} alt="logo"></Image>
           </div>
 
           <div className="social-media">
             <div className="logo">
-              <Image unoptimized loading="lazy" src={facebook} alt="fb"></Image>
+              <Image loading="lazy" src={facebook} alt="fb"></Image>
             </div>
             <div className="logo">
-              <Image unoptimized loading="lazy" src={insta} alt="insta"></Image>
+              <Image loading="lazy" src={insta} alt="insta"></Image>
             </div>
             <div className="logo">
-              <Image
-                unoptimized
-                loading="lazy"
-                src={linkdin}
-                alt="linkdin"
-              ></Image>
+              <Image loading="lazy" src={linkdin} alt="linkdin"></Image>
             </div>
             <div className="logo">
-              <Image unoptimized loading="lazy" src={tweet} alt="tweet"></Image>
+              <Image loading="lazy" src={tweet} alt="tweet"></Image>
             </div>
           </div>
         </div>

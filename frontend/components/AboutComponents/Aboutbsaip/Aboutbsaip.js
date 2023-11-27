@@ -10,7 +10,8 @@ export const Aboutbsaip = () => {
         <div className="textarea">
           <h2>
             About
-            <br /> Anangpuria Institute Of Pharmacy
+            <br /> Anangpuria Institute <br />
+            Of Pharmacy
           </h2>
           <p>
             At Anangpuria Institute of Pharmacy, we believe in fostering an

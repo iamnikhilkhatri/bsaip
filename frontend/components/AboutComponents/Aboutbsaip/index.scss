@@ -13,19 +13,22 @@
         font-family: "DM Serif Text", serif;
         font-size: 3vw;
         font-style: normal;
-        font-weight: 400;
+        // font-weight: 400;
         line-height: normal;
         width: 29vw;
         text-transform: capitalize;
         padding: 3% 0;
         margin-left: 19%;
         border-top: 5px solid var(--darkgreen);
+        br:nth-child(2) {
+          content: "";
+        }
       }
       p {
         color: #4c4c4c;
         font-family: "Poppins", sans-serif;
         font-style: normal;
-        font-weight: 400;
+        // font-weight: 400;
         line-height: normal;
 
         margin-left: 19%;
@@ -61,21 +64,36 @@
       width: 100%;
       .textarea {
         height: auto;
+        overflow-x: hidden;
         padding: 5% 0;
         h2 {
-          width: 80%;
-          margin: auto;
-          font-size: 5vw;
-          br {
-            content: "";
+          border: none;
+          width: 100%;
+          // margin: auto;
+          margin-left: 3%;
+          font-size: 8.6vw;
+          br:nth-child(2) {
+            display: block;
           }
-          text-align: center;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0px;
+
+            height: 1px;
+            width: 48%; /* percentage of the element width*/
+            border-bottom: 3px solid var(--darkgreen);
+          }
         }
+
         p {
-          width: 70%;
-          margin: auto;
-          text-align: justify;
-          font-size: 3vw;
+          width: 90%;
+          // margin: auto;
+          margin-left: 3%;
+          text-align: left;
+          font-size: 4.4vw;
         }
       }
     }

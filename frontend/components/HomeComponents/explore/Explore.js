@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import Image from "next/image";
-import explore from "../../../Assets/svg/explore.svg";
+import explore from "../../../Assets/svg/explore.png";
 import time from "../../../Assets/svg/time.svg";
 import location from "../../../Assets/svg/location.svg";
 export const Explore = () => {
@@ -33,7 +33,7 @@ export const Explore = () => {
 
       <div className="photo">
         <div className="top skeleton">
-          <Image loading="lazy" src={explore} alt="" />
+          <Image loading="lazy" src={explore} alt="" unoptimized />
         </div>
         <div className="btm">
           <h2>

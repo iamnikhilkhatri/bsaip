@@ -17,7 +17,7 @@ export const Facilites = () => {
       <div className="content-box">
         <div className="top">
           <div className="text">
-            <div className="photo">
+            <div className="photo ">
               <Image src={modern} alt="" />
             </div>
             <h3>
@@ -32,7 +32,7 @@ export const Facilites = () => {
               to excel academically.
             </p>
           </div>
-          <div className="photo">
+          <div className="photo skeleton">
             <Image src={t1} alt=""></Image>
           </div>
           <div className="text">
@@ -51,7 +51,7 @@ export const Facilites = () => {
               everyone.
             </p>
           </div>
-          <div className="photo">
+          <div className="photo skeleton">
             <Image src={t2} alt=""></Image>
           </div>
           <div className="text">
@@ -71,7 +71,7 @@ export const Facilites = () => {
           </div>
         </div>
         <div className="btm">
-          <div className="photo">
+          <div className="photo skeleton">
             <Image src={b1} alt=""></Image>
           </div>
           <div className="text">
@@ -88,7 +88,7 @@ export const Facilites = () => {
               comfortable living arrangements close to the campus.
             </p>
           </div>
-          <div className="photo">
+          <div className="photo skeleton">
             <Image src={b2} alt=""></Image>
           </div>
           <div className="text">
@@ -105,7 +105,7 @@ export const Facilites = () => {
               and secure environment for all.
             </p>
           </div>
-          <div className="photo">
+          <div className="photo skeleton">
             <Image src={b3} alt=""></Image>
           </div>
         </div>
@@ -128,10 +128,10 @@ export const Facilites = () => {
               to excel academically.
             </p>
           </div>
-          <div className="photo">
+          <div className="photo skeleton">
             <Image src={t1} alt=""></Image>
           </div>
-          <div className="photo">
+          <div className="photo skeleton">
             <Image src={t2} alt=""></Image>
           </div>
           <div className="text">
@@ -152,7 +152,7 @@ export const Facilites = () => {
           </div>
 
           <div className="text">
-            <div className="photo">
+            <div className="photo ">
               <Image src={activities} alt="" />
             </div>
             <h3>
@@ -167,11 +167,11 @@ export const Facilites = () => {
             </p>
           </div>
 
-          <div className="photo">
+          <div className="photo skeleton">
             <Image src={b1} alt=""></Image>
           </div>
 
-          <div className="photo">
+          <div className="photo skeleton">
             <Image src={b2} alt=""></Image>
           </div>
           <div className="text">
@@ -189,7 +189,7 @@ export const Facilites = () => {
             </p>
           </div>
           <div className="text">
-            <div className="photo">
+            <div className="photo ">
               <Image src={safety} alt="" />
             </div>
             <h3>
@@ -202,7 +202,7 @@ export const Facilites = () => {
               and secure environment for all.
             </p>
           </div>
-          <div className="photo">
+          <div className="photo skeleton">
             <Image src={b3} alt=""></Image>
           </div>
         </div>

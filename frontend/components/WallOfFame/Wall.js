@@ -21,14 +21,7 @@ export const Wall = () => {
   return (
     <div className="wall">
       <div className="image-box skeleton">
-        <Image
-          unoptimized
-          src={wof}
-          width={500}
-          height={500}
-          alt=""
-          loading="lazy"
-        />
+        <Image src={wof} width={500} height={500} alt="" loading="lazy" />
         {/* <div className="top">
           <div className="photo1 skeleton">
             <Image loading="lazy" src={wof1} alt="" />

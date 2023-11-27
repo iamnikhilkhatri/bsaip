@@ -1,0 +1,48 @@
+@import "../../../css-configs/mixins.scss";
+.recent {
+  padding: 3% 0;
+  width: 70%;
+  margin: auto;
+  .content-box {
+    .heading {
+      h1 {
+        color: #000;
+
+        font-family: $dm;
+        font-size: 3vw;
+
+        line-height: normal;
+        text-transform: capitalize;
+      }
+    }
+    .stories {
+      .news-boxs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1%;
+
+        .news-box {
+          margin-top: 2%;
+          width: 19%;
+          overflow-x: hidden;
+          .text {
+            margin-top: 5%;
+          }
+          .photo {
+            width: 100%;
+            height: 9vw;
+            border-radius: 8px;
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 8px;
+              object-fit: cover;
+            }
+          }
+        }
+        .news-box:nth-child(-n + 5) {
+        }
+      }
+    }
+  }
+}

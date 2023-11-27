@@ -79,6 +79,7 @@
   .photo {
     width: 90%;
     margin: auto;
+    display: flex;
     //     height: 40vw;
     img {
       width: 100%;
@@ -114,7 +115,7 @@
     }
   }
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 779px) {
   .boverview {
     .heading {
       h1 {

@@ -1,16 +1,16 @@
-import { TopArea } from "../../../components/UniversalComponents/toparea/TopArea";
-import { Language } from "../../../components/UniversalComponents/languageAndContact/Language";
+import { TopArea } from "../../../../components/UniversalComponents/toparea/TopAreaopArea
+import { Language } from "../../../../components/UniversalComponents/languageAndContact/Languagenguage
 import React from "react";
 import dt from "../../../Assets/svg/dt.svg";
 import dn from "../../../Assets/svg/dn.svg";
-import { Dpharma } from "../../../components/AcadmicsComponents/Dpharma/Dpharma";
-import { BdpObjectives } from "../../../components/UniversalComponents/Bdobjectives/BdObjectives";
-import { Traditional } from "../../../components/UniversalComponents/Opportunities/Traditional";
+import { Dpharma } from "../../../../components/AcadmicsComponents/Dpharma/Dpharmapharma
+import { BdpObjectives } from "../../../../components/UniversalComponents/Bdobjectives/BdObjectivesctives
+import { Traditional } from "../../../../components/UniversalComponents/Opportunities/Traditionaltional
 import { NonTraditional } from "@/components/UniversalComponents/Opportunities/NonTraditional";
-import { Doverview } from "../../../components/AcadmicsComponents/Dpharma/Overview";
-import { Benifits } from "../../../components/UniversalComponents/Benefits/Benefits";
-import { Register } from "../../../components/UniversalComponents/register/Register";
-import { Footer } from "../../../components/UniversalComponents/footer/Footer";
+import { Doverview } from "../../../../components/AcadmicsComponents/Dpharma/Overviewerview
+import { Benifits } from "../../../../components/UniversalComponents/Benefits/Benefitsnefits
+import { Register } from "../../../../components/UniversalComponents/register/Registergister
+import { Footer } from "../../../../components/UniversalComponents/footer/FooterFooter
 
 const page = () => {
   return (

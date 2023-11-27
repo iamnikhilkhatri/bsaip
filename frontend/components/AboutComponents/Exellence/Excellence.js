@@ -7,7 +7,10 @@ export const Excellence = () => {
     <div className="excellence">
       <div className="text">
         <div className="textarea">
-          <h2>Ensuring excellence & quality education</h2>
+          <h2>
+            Ensuring
+            <br /> excellence &<br /> quality education
+          </h2>
           <p>
             At Anangpuria Institute of Pharmacy, we place a strong emphasis on
             maintaining an exclusive and intimate learning environment. By

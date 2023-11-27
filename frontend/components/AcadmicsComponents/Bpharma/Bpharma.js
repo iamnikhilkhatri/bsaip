@@ -35,7 +35,7 @@ export const Bpharma = () => {
           </p>
         </div>
       </div>
-      <div className="photo skeleton">
+      <div className="photo ">
         <Image src={bphoto} alt=" " />
       </div>
     </div>

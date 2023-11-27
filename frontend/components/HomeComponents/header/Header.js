@@ -8,7 +8,7 @@ import asmission from "../../../Assets/svg/admission.svg";
 import register from "../../../Assets/svg/register.svg";
 import Career from "../../../Assets/svg/career.svg";
 import { useContext } from "react";
-import { useTheme } from "../../../context/Mycontext";
+// import { useTheme } from "..../../../app/context/Mycontext";
 import ourComunity from "../../../Assets/svg/ourcomunity.svg";
 import globalCampus from "../../../Assets/svg/globalcampus.svg";
 import Image from "next/image";
@@ -95,28 +95,39 @@ export const Header = () => {
                   <Image loading="lazy" src={asmission} alt="img"></Image>
                 </div>
 
-                <h2>Admission & Records</h2>
+                <h2>
+                  Admission & <br />
+                  Records
+                </h2>
               </div>
               <div className="main-box">
                 <div className="photo">
                   <Image loading="lazy" src={register} alt="img"></Image>
                 </div>
 
-                <h2>register for classes</h2>
+                <h2>
+                  College <br />
+                  Circular
+                </h2>
               </div>
               <div className="main-box">
                 <div className="photo">
                   <Image loading="lazy" src={vision} alt="img"></Image>
                 </div>
 
-                <h2>Vision & Mission</h2>
+                <h2>
+                  Vision & <br /> Mission
+                </h2>
               </div>
               <div className="main-box last">
                 <div className="photo">
                   <Image loading="lazy" src={Career} alt="img"></Image>
                 </div>
 
-                <h2>Career Opportunities</h2>
+                <h2>
+                  Career <br />
+                  Opportunities
+                </h2>
               </div>
             </div>
           </div>
@@ -139,10 +150,21 @@ export const Header = () => {
                 Development of soft skills dated 28th february 2023
               </p>
             </div>
-            <div className={"btns"} style={{ position: "relative" }}>
-              <button className="green">EXPLORE</button>
-              <button className="green">APPLY NOW</button>
-              <button className="yellow">VISIT US</button>
+            <div className="phone-btns">
+              <div className="green">
+                <button>EXPLORE</button>
+                <button>APPLY NOW</button>
+              </div>
+              <div className="yellow">
+                <button
+                  onClick={() => {
+                    console.log("clicked");
+                  }}
+                  className="visit"
+                >
+                  VISIT US
+                </button>
+              </div>
             </div>
 
             <div className="campus-360">
@@ -191,7 +213,7 @@ export const Header = () => {
                 <Image src={register} alt="img"></Image>
               </div>
 
-              <h2>register for classes</h2>
+              <h2>College Circular</h2>
             </div>
             <div className="main-box">
               <div className="photo">

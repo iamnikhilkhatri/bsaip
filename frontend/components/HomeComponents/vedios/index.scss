@@ -1,38 +1,34 @@
 .vedios {
-  padding: 2%;
-  .custom-slide {
-    text-align: center;
-    display: flex;
-    .link {
-      width: 90%;
-      margin: auto;
-      iframe {
-        width: 100%;
-        object-fit: contain;
+  .main-container {
+    border: 2px solid;
+    align-items: center;
+    padding: 2% 0;
+    overflow-x: hidden;
+    .slick-center {
+      .continer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+
+        .text {
+          border: 2px solid red;
+          transform: scale(1.3);
+          display: flex;
+          iframe {
+            object-fit: cover;
+            //             height: 100%;
+            width: 100%;
+          }
+        }
       }
     }
-    .custom-slide h3 {
-      background-color: #f0f0f0;
-      padding: 20px;
-      border: 1px solid #ccc;
+    .continer {
+      transform: scale(0.8);
+      iframe {
+        width: 100%;
+        margin: auto;
+      }
     }
-  }
-
-  .slick-slide {
-    border: 2px solid red;
-  }
-  .slick-center {
-    // background-color: #e0e0e0;
-    padding: 30px;
-  }
-  .slick-track {
-    display: flex;
-    align-items: center;
-  }
-  .slick-prev::before {
-    color: red !important;
-  }
-  .slick-next::before {
-    color: red !important;
   }
 }

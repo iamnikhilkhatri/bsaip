@@ -9,13 +9,15 @@ import { Register } from "../../components/UniversalComponents/register/Register
 import { Footer } from "../../components/UniversalComponents/footer/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Ourmission } from "../../components/AboutComponents/OurMission/Ourmission";
 const page = () => {
   return (
     <div>
       <Language />
-      <TopArea pagename="About" moredet="Home / About Us" />
+      <TopArea pagename="About Us" moredet="Home / About" />
       <Aboutbsaip />
       <History />
+      <Ourmission />
       <Management />
       <Register />
       <Footer />

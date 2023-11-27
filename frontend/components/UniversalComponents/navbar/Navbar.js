@@ -3,16 +3,18 @@ import React from "react";
 import "./index.scss";
 import Image from "next/image";
 import { useContext } from "react";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import logo from "../../../Assets/svg/logo.svg";
-import { useTheme } from "../../../context/Mycontext";
+// import { useTheme } from "../../../app/context/Mycontext";
 import { useEffect } from "react";
 
 export const Navbar = () => {
   const router = usePathname();
   const [phoneMenu, setPhoneMenu] = useState(false);
+  const [state, setState] = useState(false);
   const [moreMenuAbout, setMoreMenuAbout] = useState(false);
   const [moreMenuAcademics, setMoreMenuAcademics] = useState(false);
   const [moreMenuAdmission, setMoreMenuAdmission] = useState(false);
@@ -35,7 +37,7 @@ export const Navbar = () => {
     <div className="nav-box">
       <div className="navbar">
         <div className="logo">
-          <Image unoptimized loading="lazy" src={logo} alt=""></Image>
+          <Image loading="lazy" src={logo} alt=""></Image>
         </div>
         <div className="menu">
           <ul>
@@ -162,6 +164,9 @@ export const Navbar = () => {
                   <li>
                     <Link href="">Photo and video gallery</Link>
                   </li>
+                  <li>
+                    <Link href="/about/ourFaculties">Our Faculties</Link>
+                  </li>
                 </ul>
               </div>
               <div className="eachmenu">
@@ -186,7 +191,9 @@ export const Navbar = () => {
               <div className="eachmenu">
                 <ul>
                   <li>
-                    <Link href="">Media coverage and testimonials</Link>
+                    <Link href="/about/mediaCoverageAndTestimonials">
+                      Media coverage and testimonials
+                    </Link>
                   </li>
                   <li>
                     <Link href="/about/facilities">
@@ -250,6 +257,9 @@ export const Navbar = () => {
                   </li>
                   <li>
                     <Link href="">Student Handbook 2022-24</Link>
+                  </li>
+                  <li>
+                    <Link href="">College Circular</Link>
                   </li>
                 </ul>
               </div>
@@ -323,7 +333,9 @@ export const Navbar = () => {
                     <Link href="">Events</Link>
                   </li>
                   <li>
-                    <Link href="">Student Gallery</Link>
+                    <Link href="/studentLife/studentGallery">
+                      Student Gallery
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -367,25 +379,26 @@ export const Navbar = () => {
       </div>
       <div className="phone">
         <div className="menu-box">
-          <div
-            className="bars"
-            onClick={() => {
-              setPhoneMenu(!phoneMenu);
-              setMoreMenuAbout(false);
-              setMoreMenuAcademics(false);
-              setMoreMenuAdmission(false);
-              setMoreMenuPlacement(false);
-              setMoreMenuStudentLife(false);
-              // fun(zindex);
-              // setZindex(!zindex);
-            }}
-          >
-            <i class="fa-solid fa-bars fa-2xl" style={{ color: "#d1d1d1" }}></i>
-          </div>
           {phoneMenu && (
             <div className="side-menu">
               <div className="phone-logo">
-                <Image unoptimized loading="lazy" src={logo} alt=""></Image>
+                <Image loading="lazy" src={logo} alt=""></Image>
+                <div
+                  onClick={() => {
+                    setPhoneMenu(!phoneMenu);
+
+                    setMoreMenuAbout(false);
+                    setMoreMenuAcademics(false);
+                    setMoreMenuAdmission(false);
+                    setMoreMenuPlacement(false);
+                    setMoreMenuStudentLife(false);
+                  }}
+                >
+                  <i
+                    className="fa-solid fa-xmark fa-xl"
+                    style={{ color: "#F8EE00" }}
+                  ></i>
+                </div>
               </div>
               <div className="phone-menu">
                 <div className="menu-list">
@@ -399,27 +412,35 @@ export const Navbar = () => {
                     }}
                     className="each-menu"
                   >
-                    <Link className={router === "/" ? "active" : ""} href="/">
-                      HOME
-                    </Link>
+                    <div className="div">
+                      <Link className={router === "/" ? "active" : ""} href="/">
+                        HOME
+                      </Link>
+                    </div>
                   </div>
 
-                  <div
-                    className="each-menu"
-                    onClick={() => {
-                      setMoreMenuAbout(!moreMenuAbout);
-                      setMoreMenuAcademics(false);
-                      setMoreMenuAdmission(false);
-                      setMoreMenuPlacement(false);
-                      setMoreMenuStudentLife(false);
-                    }}
-                  >
-                    <Link
-                      className={router.includes("/about") ? "active" : ""}
-                      href=""
+                  <div className="each-menu">
+                    <div
+                      className="div"
+                      onClick={() => {
+                        setMoreMenuAbout(!moreMenuAbout);
+                        setMoreMenuAcademics(false);
+                        setMoreMenuAdmission(false);
+                        setMoreMenuPlacement(false);
+                        setMoreMenuStudentLife(false);
+                      }}
                     >
-                      ABOUT
-                    </Link>
+                      <Link
+                        className={router.includes("/about") ? "active" : ""}
+                        href=""
+                      >
+                        ABOUT
+                      </Link>
+                      <i
+                        className="fa-solid fa-angle-down"
+                        style={{ color: " #ffffff " }}
+                      ></i>
+                    </div>
                     {moreMenuAbout && (
                       <div className="more-menu">
                         <ul>
@@ -460,28 +481,40 @@ export const Navbar = () => {
                           <li>
                             <Link href="">Awards & Accolades</Link>
                           </li>
+                          <li>
+                            <Link href="/about/ourFaculties">
+                              Our Faculties
+                            </Link>
+                          </li>
                         </ul>
                       </div>
                     )}
                   </div>
 
-                  <div
-                    className="each-menu"
-                    onClick={() => {
-                      setMoreMenuAbout(false);
-                      setMoreMenuAcademics(!moreMenuAcademics);
-                      setMoreMenuAdmission(false);
-                      setMoreMenuPlacement(false);
-                      setMoreMenuStudentLife(false);
-                    }}
-                  >
-                    <Link
-                      className={router.includes("/academics") ? "active" : ""}
-                      href=""
+                  <div className="each-menu">
+                    <div
+                      className="div"
+                      onClick={() => {
+                        setMoreMenuAbout(false);
+                        setMoreMenuAcademics(!moreMenuAcademics);
+                        setMoreMenuAdmission(false);
+                        setMoreMenuPlacement(false);
+                        setMoreMenuStudentLife(false);
+                      }}
                     >
-                      ACADEMICS
-                    </Link>
-
+                      <Link
+                        className={
+                          router.includes("/academics") ? "active" : ""
+                        }
+                        href=""
+                      >
+                        ACADEMICS
+                      </Link>
+                      <i
+                        className="fa-solid fa-angle-down"
+                        style={{ color: " #ffffff " }}
+                      ></i>
+                    </div>
                     {moreMenuAcademics && (
                       <div className="more-menu">
                         <li className="menuheading">SCHOOLS</li>
@@ -539,23 +572,30 @@ export const Navbar = () => {
                     )}
                   </div>
 
-                  <div
-                    className="each-menu"
-                    onClick={() => {
-                      setMoreMenuAbout(false);
-                      setMoreMenuAcademics(false);
-                      setMoreMenuAdmission(!moreMenuAdmission);
-                      setMoreMenuPlacement(false);
-                      setMoreMenuStudentLife(false);
-                    }}
-                  >
-                    <Link
-                      className={router.includes("/admission") ? "active" : ""}
-                      href=""
+                  <div className="each-menu">
+                    <div
+                      className="div"
+                      onClick={() => {
+                        setMoreMenuAbout(false);
+                        setMoreMenuAcademics(false);
+                        setMoreMenuAdmission(!moreMenuAdmission);
+                        setMoreMenuPlacement(false);
+                        setMoreMenuStudentLife(false);
+                      }}
                     >
-                      ADMISSIONS
-                    </Link>
-
+                      <Link
+                        className={
+                          router.includes("/admission") ? "active" : ""
+                        }
+                        href=""
+                      >
+                        ADMISSIONS
+                      </Link>
+                      <i
+                        className="fa-solid fa-angle-down"
+                        style={{ color: " #ffffff " }}
+                      ></i>
+                    </div>
                     {moreMenuAdmission && (
                       <div className="more-menu">
                         <li>
@@ -588,25 +628,31 @@ export const Navbar = () => {
                     )}
                   </div>
 
-                  <div
-                    className="each-menu"
-                    onClick={() => {
-                      setMoreMenuAbout(false);
-                      setMoreMenuAcademics(false);
-                      setMoreMenuAdmission(false);
-                      setMoreMenuPlacement(false);
-                      setMoreMenuStudentLife(!moreMenuStudentLife);
-                    }}
-                  >
-                    <Link
-                      className={
-                        router.includes("/studentLife") ? "active" : ""
-                      }
-                      href=""
+                  <div className="each-menu">
+                    <div
+                      className="div"
+                      onClick={() => {
+                        setMoreMenuAbout(false);
+                        setMoreMenuAcademics(false);
+                        setMoreMenuAdmission(false);
+                        setMoreMenuPlacement(false);
+                        setMoreMenuStudentLife(!moreMenuStudentLife);
+                      }}
                     >
-                      STUDENT LIFE
-                    </Link>
+                      <Link
+                        className={
+                          router.includes("/studentLife") ? "active" : ""
+                        }
+                        href=""
+                      >
+                        STUDENT LIFE
+                      </Link>
 
+                      <i
+                        className="fa-solid fa-angle-down"
+                        style={{ color: " #ffffff " }}
+                      ></i>
+                    </div>
                     {moreMenuStudentLife && (
                       <div className="more-menu">
                         <li>
@@ -633,23 +679,31 @@ export const Navbar = () => {
                     )}
                   </div>
 
-                  <div
-                    className="each-menu"
-                    onClick={() => {
-                      setMoreMenuAbout(false);
-                      setMoreMenuAcademics(false);
-                      setMoreMenuAdmission(false);
-                      setMoreMenuPlacement(!moreMenuPlacement);
-                      setMoreMenuStudentLife(false);
-                    }}
-                  >
-                    <Link
-                      className={router.includes("/placements") ? "active" : ""}
-                      href=""
+                  <div className="each-menu">
+                    <div
+                      className="div"
+                      onClick={() => {
+                        setMoreMenuAbout(false);
+                        setMoreMenuAcademics(false);
+                        setMoreMenuAdmission(false);
+                        setMoreMenuPlacement(!moreMenuPlacement);
+                        setMoreMenuStudentLife(false);
+                      }}
                     >
-                      PLACEMENTS
-                    </Link>
+                      <Link
+                        className={
+                          router.includes("/placements") ? "active" : ""
+                        }
+                        href=""
+                      >
+                        PLACEMENTS
+                      </Link>
 
+                      <i
+                        className="fa-solid fa-angle-down"
+                        style={{ color: " #ffffff " }}
+                      ></i>
+                    </div>
                     {moreMenuPlacement && (
                       <div className="more-menu">
                         <li>
@@ -686,17 +740,41 @@ export const Navbar = () => {
                     }}
                     className="each-menu"
                   >
-                    <Link
-                      href="/contactUs"
-                      className={router.includes("/contactUs") ? "active" : ""}
-                    >
-                      CONTACT US
-                    </Link>
+                    <div className="div">
+                      <Link
+                        href="/contactUs"
+                        className={
+                          router.includes("/contactUs") ? "active" : ""
+                        }
+                      >
+                        CONTACT US
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           )}
+          <div
+            className="bars"
+            onClick={() => {
+              setPhoneMenu(!phoneMenu);
+
+              setMoreMenuAbout(false);
+              setMoreMenuAcademics(false);
+              setMoreMenuAdmission(false);
+              setMoreMenuPlacement(false);
+              setMoreMenuStudentLife(false);
+            }}
+          >
+            <i
+              className="fa-solid fa-bars fa-2xl"
+              style={{ color: "#F8EE00" }}
+            ></i>
+          </div>
+          <div className="logo-box">
+            <Image src={logo} alt=""></Image>
+          </div>
         </div>
       </div>
     </div>

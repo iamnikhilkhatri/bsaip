@@ -4,6 +4,7 @@
 }
 body {
   counter-reset: rev 7 straight rev2 7 straight2;
+  top: 0px !important;
 }
 li {
   list-style: none;
@@ -21,18 +22,22 @@ li {
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Frank+Ruhl+Libre:wght@700&family=Poppins:wght@700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/segoe-ui-4");
 
+/* .skeleton {
+                                                                                                    background: linear-gradient(
+                                                                                                        to right,
+                                                                                                        rgba(255, 255, 255, 0),
+                                                                                                        rgba(34, 83, 84, 1) 50%,
+                                                                                                        #393939 80%
+                                                                                                      ),
+                                                                                                      lightgray;
+                                                                                                    background-repeat: repeat-y;
+                                                                                                    background-size: 50px 500px;
+                                                                                                    background-position: 0 0;
+                                                                                                    animation: shine 5s infinite;
+                                                                                                  } */
 .skeleton {
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.5) 50%,
-      rgba(255, 255, 255, 0) 80%
-    ),
-    lightgray;
-  background-repeat: repeat-y;
-  background-size: 50px 500px;
-  background-position: 0 0;
-  animation: shine 1s infinite;
+  background-color: rgba(34, 83, 84, 1);
+  animation: tweet-skeleton 1s linear infinite alternate;
 }
 .skeletondg {
   background: linear-gradient(
@@ -41,7 +46,7 @@ li {
       rgba(255, 255, 255, 0.5) 50%,
       rgba(255, 255, 255, 0) 80%
     ),
-    lightgray;
+    rgb(246, 239, 239);
   background-repeat: repeat-y;
   background-size: 50px 500px;
   background-position: 0 0;
@@ -51,4 +56,32 @@ li {
   to {
     background-position: 100% 0, /* move highlight to right */ 0 0;
   }
+}
+@keyframes tweet-skeleton {
+  0% {
+    background-color: rgb(33, 76, 77);
+  }
+  100% {
+    background-color: rgb(243, 243, 243);
+  }
+}
+
+.skiptranslate iframe {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  font-size: 1px !important;
+  margin-right: 44px !important;
+}
+
+.gmnoprint {
+  display: none !important;
+}
+
+.gmnoprint {
+  border: 1px solid !important;
+}
+.mapbox iframe .gm-bundled-control-on-bottom {
+  display: none !important;
 }

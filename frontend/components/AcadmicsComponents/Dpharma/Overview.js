@@ -10,7 +10,7 @@ export const Doverview = () => {
       <div className="heading">
         <h1>Course Overview</h1>
       </div>
-      <div className="photo">
+      <div className="photo skeleton">
         <Image src={img1} alt="" />
       </div>
 

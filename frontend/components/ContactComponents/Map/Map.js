@@ -1,19 +1,32 @@
 import React from "react";
 import "./index.scss";
+import Image from "next/image";
+import img from "../../../Assets/svg/map360.svg";
 export const Map = () => {
   return (
     <div className="map">
       <div className="text-box">
-        <div className="heading">
-          <h2>An Address for Better Education!..</h2>
+        <div className="box">
+          <div className="heading">
+            <h2>
+              An Address for
+              <br /> Better Education!..
+            </h2>
+          </div>
+          <div className="details">
+            <p>
+              B. S. Anangpuria Educational
+              <br /> Institutes Alampur, Ballabgarh-
+              <br />
+              Sohna Major District
+              <br /> Road,Faridabad-121004, Delhi-NCR,
+              <br /> INDIA.
+            </p>
+          </div>
+          <div className="campusview">
+            <Image src={img} alt=""></Image>
+          </div>
         </div>
-        <div className="details">
-          <p>
-            B. S. Anangpuria Educational Institutes Alampur, Ballabgarh-Sohna
-            Major District Road,Faridabad-121004, Delhi-NCR, INDIA.
-          </p>
-        </div>
-        <div className="campusview"></div>
       </div>
       <div className="map-box">
         <iframe

@@ -2,7 +2,7 @@ import React from "react";
 
 import "./index.scss";
 import Image from "next/image";
-import mid from "../../../Assets/svg/studyat.svg";
+import mid from "../../../Assets/svg/studyat.png";
 import left from "../../../Assets/svg/bpharma.svg";
 import right from "../../../Assets/svg/dpharma.svg";
 export const StudyAt = () => {

@@ -18,7 +18,7 @@
         font-family: "DM Serif Text", serif;
         font-size: 3vw;
         font-style: normal;
-        font-weight: 400;
+        // font-weight: 400;
         line-height: normal;
         width: 29vw;
         text-transform: capitalize;
@@ -66,21 +66,38 @@
       width: 100%;
       .textarea {
         height: auto;
+        overflow-x: hidden;
         padding: 5% 0;
         h2 {
-          width: 80%;
-          margin: auto;
-          font-size: 5vw;
-          br {
+          border: none;
+          width: 97%;
+          // margin: auto;
+
+          margin-right: 0;
+          font-size: 8.6vw;
+          // br:nth-child(2) {
+          //   display: block;
+          // }
+          position: relative;
+          &:before {
             content: "";
+            position: absolute;
+            left: 0;
+            top: 0px;
+
+            height: 1px;
+            width: 48%; /* percentage of the element width*/
+            border-bottom: 3px solid var(--darkgreen);
           }
-          text-align: center;
         }
+
         p {
-          width: 70%;
-          margin: auto;
-          text-align: justify;
-          font-size: 3vw;
+          width: 97%;
+          // margin: auto;
+
+          margin-right: 0;
+          text-align: left;
+          font-size: 4.4vw;
         }
       }
     }
