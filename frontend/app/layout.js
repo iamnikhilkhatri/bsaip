@@ -3,7 +3,7 @@ import "./index.scss";
 import Script from "next/script";
 // import { Inter } from "next/font/Google";
 import Link from "next/link";
-import Script from "next/script";
+// import Script from "next/script";
 // const inter = Inter({ subsets: ["latin"] });
 import Head from "next/head";
 export const metadata = {
