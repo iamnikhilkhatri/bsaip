@@ -1,6 +1,6 @@
 import "./globals.css";
 import "./index.scss";
-
+import Script from "next/script";
 // import { Inter } from "next/font/Google";
 import Link from "next/link";
 import Script from "next/script";
@@ -36,14 +36,14 @@ export default function RootLayout({ children }) {
         crossOrigin="anonymous"
         referrerpolicy="no-referrer"
       ></Script>
+      <Script
+        src="https://website-widgets.pages.dev/dist/sienna.min.js"
+        defer
+      ></Script>
+      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
       <body>
         {children}{" "}
-        <script
-          src="https://website-widgets.pages.dev/dist/sienna.min.js"
-          defer
-        ></script>
-        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         {/* <script>
           function loadGoogleTranslate()
           {new Google.translate.TranslateElementElement("googgle_element")}
