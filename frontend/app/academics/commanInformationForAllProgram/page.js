@@ -3,7 +3,7 @@ import { Language } from "../../../components/UniversalComponents/languageAndCon
 import React from "react";
 import { CareerOpportunities } from "../../../components/AcadmicsComponents/CareerOpportunities/CareerOpportunities";
 import { Difference } from "../../../components/AcadmicsComponents/Difference/Difference";
-import { Egility } from "../../components/AcadmicsComponents/Egility/Egility";
+import { Egility } from "../../../components/AcadmicsComponents/Egility/Egility";
 import { Register } from "../../../components/UniversalComponents/register/Register";
 import { Footer } from "../../../components/UniversalComponents/footer/Footer";
 
