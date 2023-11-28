@@ -21,10 +21,14 @@ import img6 from "../../../Assets/svg/rightmail.svg";
 import img7 from "../../../Assets/svg/phone.svg";
 export const Language = () => {
   function loadGoogleTranslate() {
-    new google.translate.TranslateElement(
-      { pageLanguage: "en", includedLanguages: "en,fr,de,it" },
-      "google_element"
-    );
+    try {
+      new google.translate.TranslateElement(
+        { pageLanguage: "en", includedLanguages: "en,fr,de,it" },
+        "google_element"
+      );
+    } catch (err) {
+      console.log(err);
+    }
   }
   useEffect(() => {
     loadGoogleTranslate();
