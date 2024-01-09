@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Language } from "../../../../components/UniversalComponents/languageAndContact/Language";
 import { TopArea } from "../../../../components/UniversalComponents/toparea/TopArea";
@@ -42,7 +41,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const apiUrl = `${API_URLS.faculties}?filters[slug]=${params.slug}&populate=*`;
 
   try {
