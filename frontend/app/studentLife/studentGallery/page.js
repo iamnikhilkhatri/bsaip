@@ -10,7 +10,8 @@ const page = () => {
   return (
     <div>
       <Language />
-      <TopArea />
+      <TopArea  pagename="Student Gallery"
+        moredet="Home   /   Student Life"/>
       <StudentGallery />
       {/* <Wall /> */}
       <Register />

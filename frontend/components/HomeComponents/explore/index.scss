@@ -10,7 +10,7 @@
       h2 {
         color: #000;
         border-top: 5px solid var(--darkgreen);
-        font-family: "DM Serif Text", serif;
+        font-family: "DM Serif Text", ui-sans-serif;
         font-size: 3vw;
         font-style: normal;
         //         font-weight: 400;
@@ -36,6 +36,10 @@
         .point {
           padding: 6% 0;
           border-top: 2px solid rgba(47, 102, 114, 0.3);
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
           p {
             color: #000;
             font-family: "Frank Ruhl Libre", serif;
@@ -45,6 +49,20 @@
             font-weight: 700;
             line-height: normal;
             text-transform: capitalize;
+          }
+          .outer {
+            padding: 4px;
+            width: 25px;
+            height: 25px;
+            border-radius: 29px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .inner {
+              width: 12px;
+              height: 12px;
+              border-radius: 14px;
+            }
           }
         }
       }
@@ -116,6 +134,13 @@
         height: 3vw;
         width: 20%;
         margin-top: 2%;
+        &:hover {
+          scale: 1.2;
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+            0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          // position: relative;
+          // left: 2px;
+        }
       }
     }
   }

@@ -21,7 +21,12 @@ export const Contact = () => {
           <div className="text">
             <h2 className="h2">Email Us</h2>
             <p className="p1">Send your mail for general enquiries.</p>
-            <p className="p2">bsaei@anangpuria.com</p>
+            <a
+              href="mailto:bsaei@anangpuria.com"
+              style={{ textDecoration: "none" }}
+            >
+              <p className="p2">bsaei@anangpuria.com</p>
+            </a>
           </div>
         </div>
         <div className="call">
@@ -31,7 +36,9 @@ export const Contact = () => {
           <div className="text">
             <h2 className="h2">Call Us</h2>
             <p className="p1">Make a call for your general enquiries.</p>
-            <p className="p2">0129-2206750-53</p>
+            <a href={`tel:0129-2206750-53`} style={{ textDecoration: "none" }}>
+              <p className="p2">0129-2206750-53</p>
+            </a>
           </div>
         </div>
       </div>

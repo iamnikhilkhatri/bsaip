@@ -14,7 +14,7 @@ export const Recent = () => {
           <div className="news-boxs">
             {arr.map((e, index) => {
               return (
-                <div key={index} className="news-box">
+                <div className="news-box" key={index}>
                   <div className="photo">
                     <Image src={img} alt="" />
                   </div>

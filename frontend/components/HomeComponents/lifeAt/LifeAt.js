@@ -1,11 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import "./index.scss";
-import img1 from "../../../Assets/svg/campusright.svg";
-import img2 from "../../../Assets/svg/clt.svg";
-import img3 from "../../../Assets/svg/clbr.svg";
-import img4 from "../../../Assets/svg/clbl.svg";
+import Aos from "aos";
+import img1 from "../../../Assets/svg/lifeat.png";
+import img2 from "../../../Assets/svg/vne.png";
+import { useRouter } from "next/navigation";
+import img3 from "../../../Assets/svg/tvo.png";
+import img4 from "../../../Assets/svg/thve.png";
 export const LifeAt = () => {
+  // /studentLife/studentGallery
+  const router =useRouter()
+  const redirectTo =(path)=>{
+    router.push(path)
+  }
+
   return (
     <div className="lifeat">
       <div className="left">
@@ -17,7 +25,7 @@ export const LifeAt = () => {
               industry-level labs set us apart from other institutions in the
               vicinity.
             </p>
-            <button>LIFE AT BSAIP</button>
+            <button onClick={()=>{redirectTo("/studentLife/studentGallery")}}>LIFE AT BSAIP</button>
           </div>
         </div>
         <div className="btm">

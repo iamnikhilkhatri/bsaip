@@ -5,8 +5,9 @@ import { usePathname } from "next/navigation";
 import { EachFaculties } from "./EachFaculties";
 import { useState } from "react";
 import { Faculties } from "./Faculties";
-export const SpecialComponent = () => {
+export const SpecialComponent = (props) => {
   const router = usePathname();
+  console.log(props.details);
   const [id, setId] = useState("");
   console.log(router);
   return (
@@ -28,7 +29,7 @@ export const SpecialComponent = () => {
             : { display: "block" }
         }
       >
-        <EachFaculties id={id} setId={setId} />
+        <EachFaculties id={id} setId={setId} datas={props.details} />
       </div>
     </div>
   );

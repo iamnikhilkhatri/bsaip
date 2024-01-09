@@ -41,16 +41,25 @@ export const Language = () => {
           <div className="social-media">
             <ul>
               <li className="fb">
-                <Image src={img} loading="lazy" alt="img"></Image>
+                <a href="https://www.facebook.com/anangpuria/" target="_blank">
+                  <Image src={img} loading="lazy" alt="img"></Image>{" "}
+                </a>
               </li>
               <li>
                 <Image src={img1} loading="lazy" alt="img"></Image>
               </li>
               <li>
-                <Image src={img2} loading="lazy" alt="img"></Image>
+                <a href="https://twitter.com/anangpurias" target="_blank">
+                  <Image src={img2} loading="lazy" alt="img"></Image>
+                </a>
               </li>
               <li>
-                <Image src={img3} loading="lazy" alt="img"></Image>
+                <a
+                  href="mailto:bsaei@anangpuria.com"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Image src={img3} loading="lazy" alt="img"></Image>{" "}
+                </a>
               </li>
             </ul>
           </div>
@@ -60,11 +69,17 @@ export const Language = () => {
         <div className="header-top-right">
           <div className="mail">
             <Image src={img6} loading="lazy" alt=""></Image>
-            <p> bsaei@anangpuria.com</p>
+            <a
+              href="mailto:bsaei@anangpuria.com"
+              style={{ textDecoration: "none" }}
+            >
+              {" "}
+              <p>bsaei@anangpuria.com</p>{" "}
+            </a>
           </div>
           <div className="phone">
             <Image src={img7} loading="lazy" alt=""></Image>
-            <p> 0129-2206750-53</p>
+            <a href={`tel:0129-2206750-53`}>0129-2206750-53</a>
           </div>
         </div>
       </div>

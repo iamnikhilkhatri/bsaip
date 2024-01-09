@@ -1,21 +1,22 @@
 "use client";
 import React from "react";
 import "./index.scss";
-import { useContext } from "react";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
 import facebook from "../../../Assets/svg/btmfb.svg";
+import loc from "../../../Assets/svg/loca.svg";
+import Link from "next/link";
 import insta from "../../../Assets/svg/btminsta.svg";
 import logo from "../../../Assets/svg/anag.svg";
-// import { i18n } from "next-i18next";
 import linkdin from "../../../Assets/svg/btmlinkdin.svg";
 import tweet from "../../../Assets/svg/btmtweet.svg";
-// import { Context } from "../../../app/context/Mycontext";
-import { useTransform } from "framer-motion";
-// import { i18n } from "@/next-i18next.config";
-import { changeLanguage } from "i18next";
+import { useRouter } from "next/navigation";
 
 export const Footer = () => {
+  const router = useRouter();
+  const redirectTo = (path) => {
+    router.push(path);
+  };
+
   return (
     <div className="footer">
       <div className="content-box">
@@ -29,21 +30,52 @@ export const Footer = () => {
         </div>
         <div className="footer-mid">
           <div className="quick-links">
-            <h2>QUICK LINKS</h2>
+            <h2>Quick Links</h2>
             <div className="types">
               <div className="type-1">
                 <ul>
-                  <li>PCI</li>
-                  <li>AICTC</li>
-                  <li>DTE</li>
-                  <li>HSBTE</li>
-                  <li>HSCS</li>
+                  <a
+                    href="https://www.pci.nic.in/"
+                    target="_blank"
+                    className="a"
+                  >
+                    <li>PCI</li>
+                  </a>
+                  <a
+                    href="https://www.aicte-india.org/"
+                    target="_blank"
+                    className="a"
+                  >
+                    <li>AICTC</li>
+                  </a>
+                  <a
+                    href="https://www.techeduhry.gov.in/"
+                    target="_blank"
+                    className="a"
+                  >
+                    <li>DTE</li>
+                  </a>
+                  <a href="http://hsbte.org.in/" target="_blank" className="a">
+                    <li>HSBTE</li>
+                  </a>
+                  <a
+                    href="https://www.hstes.org.in/"
+                    target="_blank"
+                    className="a"
+                  >
+                    <li>HSCS</li>
+                  </a>
                 </ul>
               </div>
               <div className="type-2">
                 <ul>
-                  <li>About Us</li>
-                  <li>Admissions</li>
+                  <Link href="/about" className="a">
+                    <li>About Us</li>
+                  </Link>
+                  <Link href="/register" className="a">
+                    <li>Admissions</li>
+                  </Link>
+
                   <li>Placements</li>
                   <li>Students Life</li>
                   <li>Academics</li>
@@ -54,8 +86,17 @@ export const Footer = () => {
                   <li>SIF Report of PCI</li>
                   <li>Student Results</li>
                   <li>Internal Committees</li>
-                  <li>Education Loans</li>
-                  <li>Pt B D Sharma University</li>
+                  <a
+                    href="https://www.vidyalakshmi.co.in/Students/"
+                    target="_blanl"
+                    className="a"
+                  >
+                    <li>Education Loans</li>
+                  </a>
+
+                  <a href="http://uhsr.ac.in/" target="_blank" className="a">
+                    <li>Pt B D Sharma University</li>{" "}
+                  </a>
                 </ul>
               </div>
             </div>
@@ -66,11 +107,24 @@ export const Footer = () => {
               B. S. Anangpuria Educational Institutes,Alampur, Ballabgarh-Sohna
               Major District Road,Faridabad-121004, Delhi-NCR, INDIA.
             </p>
-            <button>Find Us On Map</button>
+            <div
+              className="loca"
+              onClick={() => {
+                redirectTo("/contactUs#map");
+              }}
+            >
+              <Image src={loc} alt="loc" unoptimized />{" "}
+              <button>Find Us On Map</button>
+            </div>
           </div>
           <div className="subscribe">
             <h2>Subscribe</h2>
-            <p>abc@gmail.com</p>
+            <a
+              href="mailto:bsaei@anangpuria.com"
+              style={{ textDecoration: "none" }}
+            >
+              <p>bsaei@anangpuria.com</p>
+            </a>
             <hr />
             <button>SUBSCRIBE</button>
           </div>
@@ -83,7 +137,9 @@ export const Footer = () => {
 
           <div className="social-media">
             <div className="logo">
-              <Image loading="lazy" src={facebook} alt="fb"></Image>
+              <a href="https://www.facebook.com/anangpuria/" target="_blank">
+                <Image loading="lazy" src={facebook} alt="fb"></Image>
+              </a>
             </div>
             <div className="logo">
               <Image loading="lazy" src={insta} alt="insta"></Image>
@@ -92,7 +148,9 @@ export const Footer = () => {
               <Image loading="lazy" src={linkdin} alt="linkdin"></Image>
             </div>
             <div className="logo">
-              <Image loading="lazy" src={tweet} alt="tweet"></Image>
+              <a href="https://twitter.com/anangpurias" target="_blank">
+                <Image loading="lazy" src={tweet} alt="tweet"></Image>
+              </a>
             </div>
           </div>
         </div>

@@ -15,8 +15,8 @@ export const Facts = () => {
           </div>
           <div className="details">
             <p>
-              Reference site about Lorem Ipsum, giving information on its
-              origins, as well as a random Lipsum generator.
+              Uncover a world of fascinating knowledge with our curated
+              collection of the most interesting facts
             </p>
           </div>
         </div>

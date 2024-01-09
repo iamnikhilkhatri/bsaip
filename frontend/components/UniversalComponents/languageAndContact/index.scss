@@ -146,10 +146,11 @@
         img {
           width: 10%;
         }
-        p {
+        a {
           font-family: $poppin;
           font-style: normal;
           font-weight: 500;
+          text-decoration: none;
           line-height: normal;
           color: rgba(0, 0, 0, 1);
           font-size: 1vw;
@@ -168,8 +169,10 @@
           }
         }
         .phone {
-          p {
+          a {
             font-size: 11px;
+            text-decoration: none;
+            // color: #0000;
           }
         }
       }

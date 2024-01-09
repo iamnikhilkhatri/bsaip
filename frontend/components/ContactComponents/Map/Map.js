@@ -4,7 +4,7 @@ import Image from "next/image";
 import img from "../../../Assets/svg/map360.svg";
 export const Map = () => {
   return (
-    <div className="map">
+    <div className="map" id="map">
       <div className="text-box">
         <div className="box">
           <div className="heading">

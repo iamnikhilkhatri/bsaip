@@ -1,11 +1,23 @@
+"use client";
 import React from "react";
-
 import "./index.scss";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import Aos from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 import Image from "next/image";
 import mid from "../../../Assets/svg/studyat.png";
 import left from "../../../Assets/svg/bpharma.svg";
 import right from "../../../Assets/svg/dpharma.svg";
 export const StudyAt = () => {
+  const router = useRouter();
+  const redirectTo = (path) => {
+    router.push(path);
+  };
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div className="studyat">
       <div className="heading">
@@ -15,7 +27,7 @@ export const StudyAt = () => {
       </div>
 
       <div className="content">
-        <div className="left">
+        <div className="left" data-aos="fade-left">
           <div className={`img`}>
             <Image src={left} alt="left"></Image>
           </div>
@@ -27,7 +39,15 @@ export const StudyAt = () => {
             equip students with the knowledge and skills required to thrive in
             the ever-evolving pharmaceutical industry.
           </p>
-          <button>VIEW MORE</button>
+          {/* <Link href="/academics/bpharma"> */}
+          <button
+            onClick={() => {
+              redirectTo("/academics/bpharma");
+            }}
+          >
+            VIEW MORE
+          </button>
+          {/* </Link> */}
         </div>
 
         <div className="center skeleton">
@@ -36,7 +56,7 @@ export const StudyAt = () => {
           </div>
         </div>
 
-        <div className="right">
+        <div className="right" data-aos="fade-right">
           <div className={`img `}>
             <Image src={right} alt=""></Image>
           </div>
@@ -48,7 +68,13 @@ export const StudyAt = () => {
             excellent choice for those looking to begin their journey in the
             field of pharmacy.
           </p>
-          <button>VIEW MORE</button>
+          <button
+            onClick={() => {
+              redirectTo("/academics/dpharma");
+            }}
+          >
+            VIEW MORE
+          </button>
         </div>
       </div>
     </div>

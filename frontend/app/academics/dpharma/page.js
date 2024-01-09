@@ -30,8 +30,36 @@ const page = () => {
       />
       <Doverview />
       <Benifits />
-      <Traditional srct={dt} />
-      <NonTraditional src={dn} />
+      <Traditional
+        srct={dt}
+        p1s={"Clinical Pharmacy and Patient Care:"}
+        p1={
+          "Pharmacists with a Pharm.D often work in clinical settings, collaborating with healthcare teams to optimize medication therapy for patients. "
+        }
+        p2s={"Pharmaceutical Industry - Medical Affairs:"}
+        p2={
+          "In the pharmaceutical industry, individuals with a Pharm.D can pursue careers in medical affairs. "
+        }
+        p3s={"Pharmacovigilance and Drug Safety:"}
+        p3={
+          "Pharmacovigilance professionals monitor and assess the safety of pharmaceutical products throughout their lifecycle."
+        }
+      />
+      <NonTraditional
+        src={dn}
+        p1={
+          "In this role, Pharm.D graduates can work in clinical research, overseeing the design, implementation, and monitoring of clinical trials. "
+        }
+        p1s={"Clinical Trials Management:"}
+        p2={
+          "Pharm.D professionals can specialize in pharmacoeconomics, assessing the economic impact of pharmaceutical interventions."
+        }
+        p2s={"Pharmacoeconomics and Health Economics:"}
+        p3={
+          "With the increasing reliance on data in healthcare, Pharm.D graduates can explore roles in healthcare informatics and data analytics."
+        }
+        p3s={"Healthcare Informatics and Data Analytics:"}
+      />
       <Register />
       <Footer />
     </div>

@@ -87,6 +87,11 @@
         // width: 200px;
         font-size: 1vw;
         padding: 2% 9%;
+        &:hover {
+          scale: 1.2;
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+            0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
       }
     }
     .right {
@@ -146,6 +151,11 @@
         // width: 200px;
         font-size: 1vw;
         padding: 2% 9%;
+        &:hover {
+          scale: 1.2;
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+            0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
       }
     }
     .center {

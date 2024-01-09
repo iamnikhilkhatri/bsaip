@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import "./index.scss";
 import dn from "../../../Assets/svg/dn.svg";
-export const NonTraditional = ({ src }) => {
+export const NonTraditional = ({ src, p1, p1s, p2, p2s, p3, p3s }) => {
   return (
     <div className="nontraditional">
       <div className="text">
@@ -12,19 +12,13 @@ export const NonTraditional = ({ src }) => {
             <br /> opportunities
           </h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the {`industry's`} standard dummy
-            text ever since the 1500s, when an unknown printer took a
+            <strong>{p1s}</strong> {p1}
           </p>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the {`industry's`} standard dummy
-            text ever since the 1500s, when an unknown printer took a
+            <strong>{p2s}</strong> {p2}
           </p>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the {`industry's`}standard dummy text
-            ever since the 1500s, when an unknown printer took a
+            <strong>{p3s}</strong> {p3}
           </p>
         </div>
       </div>

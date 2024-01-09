@@ -133,22 +133,27 @@
         }
         .side-menu {
           position: absolute;
-          bottom: 100%;
+          // bottom: 100%;
+          top: 0;
           left: 0;
           right: 0;
-          background-color: #008cba;
+          background-color: black;
           overflow: hidden;
           width: 100%;
-          height: 0;
+          height: 100vh;
           transition: 0.5s ease;
 
           .phone-logo {
             width: 88%;
             margin: auto;
             img {
-              width: 100%;
+              width: 70%;
               object-fit: contain;
             }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
           }
           .phone-menu {
             margin-top: 2%;
@@ -188,6 +193,7 @@
                   background-color: #fff;
                   border-radius: 10px;
                   li {
+                    margin-top: 10px;
                     padding: 4px;
                     color: #225354;
                     font-family: "Poppins", serif;
@@ -214,7 +220,41 @@
                   }
                 }
               }
+              
+              .more-menu {
+                background-color: #fff;
+                border-radius: 10px;
+                li {
+                  margin-top: 10px;
+                  padding: 4px;
+                  color: #225354;
+                  font-family: "Poppins", serif;
+                  font-size: 1vw;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+
+                  a {
+                    text-decoration: none;
+                    color: #4c4c4c;
+                    font-family: "Poppins", serif;
+                    font-size: 2vw;
+                    padding: 4% 0;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                  }
+                }
+                .menuheading {
+                  border-bottom: 2px solid #225354;
+                  margin-bottom: 3%;
+                  font-size: 3vw;
+                }
+              }
+
+
             }
+
           }
         }
       }
@@ -286,6 +326,7 @@
                   display: flex;
                   align-items: center;
                   justify-content: space-between;
+                  // flex-direction: column;
                   a {
                     padding: 0 4px;
 
@@ -306,11 +347,18 @@
                 .more-menu {
                   background-color: #fff;
                   border-radius: 10px;
+                  // pointer-events: none;
+                  // ul{
+    // display: flex;
+    // flex-direction: column;
+    // gap: 8px;
+                  
                   li {
+                 
                     padding: 4px;
                     color: #225354;
                     font-family: "Poppins", serif;
-                    font-size: 1vw;
+                    font-size: 3.4vw;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
@@ -320,7 +368,7 @@
                       color: #4c4c4c;
                       font-family: "Poppins", serif;
                       font-size: 3.4vw;
-                      padding: 4% 0;
+                      padding: 1% 0;
                       font-style: normal;
                       font-weight: 500;
                       line-height: normal;
@@ -332,7 +380,45 @@
                     font-size: 4vw;
                   }
                 }
-              }
+                }
+
+                .more-menu {
+                  background-color: #fff;
+                  border-radius: 10px;
+                  // pointer-events: none;
+                  // ul{
+    // display: flex;
+    // flex-direction: column;
+    // gap: 8px;
+                  
+                  li {
+                 
+                    padding: 4px;
+                    color: #225354;
+                    font-family: "Poppins", serif;
+                    font-size: 3.4vw;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+
+                    a {
+                      text-decoration: none;
+                      color: #4c4c4c;
+                      font-family: "Poppins", serif;
+                      font-size: 3.4vw;
+                      padding: 1% 0;
+                      font-style: normal;
+                      font-weight: 500;
+                      line-height: normal;
+                    }
+                  }
+                  .menuheading {
+                    border-bottom: 2px solid #225354;
+                    margin-bottom: 4%;
+                    font-size: 4vw;
+                  }
+                }
+              // }
             }
           }
         }

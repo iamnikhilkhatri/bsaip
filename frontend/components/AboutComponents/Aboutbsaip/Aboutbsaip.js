@@ -5,7 +5,7 @@ import Image from "next/image";
 import about from "../../../Assets/svg/about.svg";
 export const Aboutbsaip = () => {
   return (
-    <div className="about">
+    <div className="about" >
       <div className="text">
         <div className="textarea">
           <h2>

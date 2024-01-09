@@ -30,8 +30,36 @@ const page = () => {
       />
       <Boverview />
       <Benifits />
-      <Traditional srct={bt} />
-      <NonTraditional src={bn} />
+      <Traditional
+        srct={bt}
+        p1={
+          "In this field, you can contribute to the discovery and development of new drugs, formulations, or therapeutic approaches."
+        }
+        p1s={"Pharmaceutical Research and Development (R&D):"}
+        p2={
+          "Clinical research involves conducting trials to evaluate the safety and efficacy of pharmaceutical products before they reach the market."
+        }
+        p2s={"Clinical Research:"}
+        p3={
+          "Regulatory affairs professionals play a crucial role in ensuring that pharmaceutical products comply with applicable regulations and standards. "
+        }
+        p3s={"Pharmaceutical Regulatory Affairs:"}
+      />
+      <NonTraditional
+        src={bn}
+        p1s={"Regulatory Writing:"}
+        p1={
+          "Involves creating documents for regulatory submissions to health authorities, ensuring compliance with regulatory standards."
+        }
+        p2s={"Medical Science Liaison (MSL):"}
+        p2={
+          "Acts as a liaison between pharmaceutical companies and healthcare professionals, providing scientific and clinical information about products."
+        }
+        p3s={"Healthcare IT and Informatics:"}
+        p3={
+          "Involves leveraging technology to improve healthcare processes, such as working with electronic health records or health data analysis."
+        }
+      />
       <Register />
       <Footer />
     </div>

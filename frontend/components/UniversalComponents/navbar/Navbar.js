@@ -3,13 +3,15 @@ import React from "react";
 import "./index.scss";
 import Image from "next/image";
 import { useContext } from "react";
-
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import logo from "../../../Assets/svg/logo.svg";
 // import { useTheme } from "../../../app/context/Mycontext";
+
 import { useEffect } from "react";
+// import { useRouter } from "next/navigation";
 
 export const Navbar = () => {
   const router = usePathname();
@@ -32,11 +34,15 @@ export const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
-
+  
+  const router2 =useRouter()
+  const redirectTo =(path)=>{
+    router2.push(path)
+  }
   return (
     <div className="nav-box">
       <div className="navbar">
-        <div className="logo">
+        <div className="logo" onClick={()=>{redirectTo("/")}} style={{cursor:"pointer"}}>
           <Image loading="lazy" src={logo} alt=""></Image>
         </div>
         <div className="menu">
@@ -420,19 +426,17 @@ export const Navbar = () => {
                   </div>
 
                   <div className="each-menu">
-                    <div
-                      className="div"
-                      onClick={() => {
-                        setMoreMenuAbout(!moreMenuAbout);
-                        setMoreMenuAcademics(false);
-                        setMoreMenuAdmission(false);
-                        setMoreMenuPlacement(false);
-                        setMoreMenuStudentLife(false);
-                      }}
-                    >
+                    <div className="div"   onClick={() => {
+                          setMoreMenuAbout(!moreMenuAbout);
+                          setMoreMenuAcademics(false);
+                          setMoreMenuAdmission(false);
+                          setMoreMenuPlacement(false);
+                          setMoreMenuStudentLife(false);
+                        }}>
                       <Link
                         className={router.includes("/about") ? "active" : ""}
                         href=""
+                      
                       >
                         ABOUT
                       </Link>
@@ -441,9 +445,11 @@ export const Navbar = () => {
                         style={{ color: " #ffffff " }}
                       ></i>
                     </div>
-                    {moreMenuAbout && (
+                    
+                  </div>
+                  {moreMenuAbout && (
                       <div className="more-menu">
-                        <ul>
+                        
                           <li>
                             <Link href="/about">About B.S. Anangpuria</Link>
                           </li>
@@ -486,27 +492,24 @@ export const Navbar = () => {
                               Our Faculties
                             </Link>
                           </li>
-                        </ul>
+                        
                       </div>
                     )}
-                  </div>
 
                   <div className="each-menu">
-                    <div
-                      className="div"
-                      onClick={() => {
-                        setMoreMenuAbout(false);
-                        setMoreMenuAcademics(!moreMenuAcademics);
-                        setMoreMenuAdmission(false);
-                        setMoreMenuPlacement(false);
-                        setMoreMenuStudentLife(false);
-                      }}
-                    >
+                    <div className="div"  onClick={() => {
+                          setMoreMenuAbout(false);
+                          setMoreMenuAcademics(!moreMenuAcademics);
+                          setMoreMenuAdmission(false);
+                          setMoreMenuPlacement(false);
+                          setMoreMenuStudentLife(false);
+                        }}>
                       <Link
                         className={
                           router.includes("/academics") ? "active" : ""
                         }
                         href=""
+                       
                       >
                         ACADEMICS
                       </Link>
@@ -515,7 +518,9 @@ export const Navbar = () => {
                         style={{ color: " #ffffff " }}
                       ></i>
                     </div>
-                    {moreMenuAcademics && (
+                    
+                  </div>
+                  {moreMenuAcademics && (
                       <div className="more-menu">
                         <li className="menuheading">SCHOOLS</li>
                         <li>
@@ -570,24 +575,21 @@ export const Navbar = () => {
                         </li>
                       </div>
                     )}
-                  </div>
 
                   <div className="each-menu">
-                    <div
-                      className="div"
-                      onClick={() => {
-                        setMoreMenuAbout(false);
-                        setMoreMenuAcademics(false);
-                        setMoreMenuAdmission(!moreMenuAdmission);
-                        setMoreMenuPlacement(false);
-                        setMoreMenuStudentLife(false);
-                      }}
-                    >
+                    <div className="div"     onClick={() => {
+                          setMoreMenuAbout(false);
+                          setMoreMenuAcademics(false);
+                          setMoreMenuAdmission(!moreMenuAdmission);
+                          setMoreMenuPlacement(false);
+                          setMoreMenuStudentLife(false);
+                        }}>
                       <Link
                         className={
                           router.includes("/admission") ? "active" : ""
                         }
                         href=""
+                    
                       >
                         ADMISSIONS
                       </Link>
@@ -596,7 +598,9 @@ export const Navbar = () => {
                         style={{ color: " #ffffff " }}
                       ></i>
                     </div>
-                    {moreMenuAdmission && (
+                    
+                  </div>
+                  {moreMenuAdmission && (
                       <div className="more-menu">
                         <li>
                           <Link href="/admission/overview">Overview</Link>
@@ -626,24 +630,21 @@ export const Navbar = () => {
                         </li>
                       </div>
                     )}
-                  </div>
 
                   <div className="each-menu">
-                    <div
-                      className="div"
-                      onClick={() => {
-                        setMoreMenuAbout(false);
-                        setMoreMenuAcademics(false);
-                        setMoreMenuAdmission(false);
-                        setMoreMenuPlacement(false);
-                        setMoreMenuStudentLife(!moreMenuStudentLife);
-                      }}
-                    >
+                    <div className="div"   onClick={() => {
+                          setMoreMenuAbout(false);
+                          setMoreMenuAcademics(false);
+                          setMoreMenuAdmission(false);
+                          setMoreMenuPlacement(false);
+                          setMoreMenuStudentLife(!moreMenuStudentLife);
+                        }}> 
                       <Link
                         className={
                           router.includes("/studentLife") ? "active" : ""
                         }
                         href=""
+                      
                       >
                         STUDENT LIFE
                       </Link>
@@ -653,7 +654,9 @@ export const Navbar = () => {
                         style={{ color: " #ffffff " }}
                       ></i>
                     </div>
-                    {moreMenuStudentLife && (
+                   
+                  </div>
+                  {moreMenuStudentLife && (
                       <div className="more-menu">
                         <li>
                           <Link href="">College Activities</Link>
@@ -677,24 +680,20 @@ export const Navbar = () => {
                         </li>
                       </div>
                     )}
-                  </div>
-
                   <div className="each-menu">
-                    <div
-                      className="div"
-                      onClick={() => {
-                        setMoreMenuAbout(false);
-                        setMoreMenuAcademics(false);
-                        setMoreMenuAdmission(false);
-                        setMoreMenuPlacement(!moreMenuPlacement);
-                        setMoreMenuStudentLife(false);
-                      }}
-                    >
+                    <div className="div"     onClick={() => {
+                          setMoreMenuAbout(false);
+                          setMoreMenuAcademics(false);
+                          setMoreMenuAdmission(false);
+                          setMoreMenuPlacement(!moreMenuPlacement);
+                          setMoreMenuStudentLife(false);
+                        }}>
                       <Link
                         className={
                           router.includes("/placements") ? "active" : ""
                         }
                         href=""
+                    
                       >
                         PLACEMENTS
                       </Link>
@@ -704,7 +703,9 @@ export const Navbar = () => {
                         style={{ color: " #ffffff " }}
                       ></i>
                     </div>
-                    {moreMenuPlacement && (
+                    
+                  </div>
+                  {moreMenuPlacement && (
                       <div className="more-menu">
                         <li>
                           <Link href="">Placement at a Glance</Link>
@@ -728,8 +729,6 @@ export const Navbar = () => {
                         </li>
                       </div>
                     )}
-                  </div>
-
                   <div
                     onClick={() => {
                       setMoreMenuAcademics(false);

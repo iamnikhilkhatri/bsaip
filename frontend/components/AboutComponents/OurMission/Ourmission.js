@@ -10,7 +10,7 @@ import OV from "../../../Assets/svg/OV.svg";
 export const Ourmission = () => {
   const [state, setState] = useState(true);
   return (
-    <div className="ourMission">
+    <div className="ourMission" id="vissionandmission">
       <div className="photo skeleton">
         <Image src={img1} alt="" />
       </div>

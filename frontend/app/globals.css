@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   counter-reset: rev 7 straight rev2 7 straight2;
   top: 0px !important;
@@ -21,7 +22,11 @@ li {
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Frank+Ruhl+Libre:wght@700&family=Poppins:wght@700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/segoe-ui-4");
-
+.a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
 /* .skeleton {
                                                                                                     background: linear-gradient(
                                                                                                         to right,

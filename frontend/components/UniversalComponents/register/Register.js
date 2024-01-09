@@ -11,10 +11,14 @@ export const Register = () => {
     <div className="skeleton">
       <div className="register ">
         <div className="register-text ">
+          <span translate="no">
+
+       
           <p className="yellow">
             Register
             <span className="white"> to study in Next Academic Year 2022.</span>
           </p>
+          </span>
           <div className="btn">
             <button>
               <Link style={style} href="/register">
