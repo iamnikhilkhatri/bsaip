@@ -20,9 +20,9 @@ const Slug = (props) => {
   );
 };
 
-Slug.getStaticPaths = () => {
+export async function getStaticPaths() {
   try {
-    const result = axios.get(`${API_URLS.faculties}`);
+    const result = await axios.get(`${API_URLS.faculties}`);
     console.log(result.data.data);
     const data = result.data.data;
 
@@ -39,14 +39,14 @@ Slug.getStaticPaths = () => {
     console.error(error);
     return { paths: [], fallback: false };
   }
-};
+}
 
-Slug.getStaticProps = ({ params }) => {
+export async function getStaticProps({ params }) {
   const apiUrl = `${API_URLS.faculties}?filters[slug]=${params.slug}&populate=*`;
 
   try {
-    const response = fetch(apiUrl);
-    const result = response.json();
+    const response = await fetch(apiUrl);
+    const result = await response.json();
     const data = result.data.data;
 
     return {
@@ -58,6 +58,5 @@ Slug.getStaticProps = ({ params }) => {
       notFound: true,
     };
   }
-};
-
+}
 export default Slug;
