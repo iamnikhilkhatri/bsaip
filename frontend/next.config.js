@@ -14,6 +14,13 @@ module.exports = {
   },
 };
 
+const config = {
+  experimental: {
+    serverActions: true,
+  },
+};
+
+module.exports = config;
 // module.exports = {
 //   sassOptions: {
 //     includePaths: [path.join(__dirname, "styles")],
