@@ -42,23 +42,4 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getServerSideProps({ params }) {
-  "use server";
-  const apiUrl = `${API_URLS.faculties}?filters[slug]=${params.slug}&populate=*`;
-
-  try {
-    const response = await fetch(apiUrl);
-    const result = await response.json();
-    const data = result.data.data;
-
-    return {
-      props: { data },
-    };
-  } catch (error) {
-    console.error(error);
-    return {
-      notFound: true,
-    };
-  }
-}
 export default Slug;
