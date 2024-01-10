@@ -36,7 +36,10 @@ export default function RootLayout({ children }) {
         crossOrigin="anonymous"
         referrerpolicy="no-referrer"
       ></Script>
-
+      <Script
+        src="https://website-widgets.pages.dev/dist/sienna.min.js"
+        defer
+      ></Script>
       <Script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></Script>
 
       <body>
@@ -45,10 +48,6 @@ export default function RootLayout({ children }) {
           function loadGoogleTranslate()
           {new Google.translate.TranslateElementElement("googgle_element")}
         </script> */}
-<script
-        src="https://website-widgets.pages.dev/dist/sienna.min.js"
-        defer
-      ></script>
       </body>
       
     </html>

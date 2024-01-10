@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+
 // import "../i18n";
 import styles from "./page.module.css";
 import { useState } from "react";

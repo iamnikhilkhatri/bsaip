@@ -15,24 +15,24 @@ export default class Vedios extends Component {
 
       slidesToScroll: 1,
       responsive: [
-        {
-          breakpoint: 2500,
-          settings: {
-            slidesToScroll: 3,
-            infinite: true,
-            slidesToShow: 3,
-            // dots: true,
-          },
-        },
-        {
-          breakpoint: 1199,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            // dots: true,
-          },
-        },
+        // {
+        //   breakpoint: 2500,
+        //   settings: {
+        //     slidesToScroll: 3,
+        //     infinite: true,
+        //     slidesToShow: 3,
+        //     // dots: true,
+        //   },
+        // },
+        // {
+        //   breakpoint: 1199,
+        //   settings: {
+        //     slidesToShow: 2,
+        //     slidesToScroll: 1,
+        //     infinite: true,
+        //     // dots: true,
+        //   },
+        // },
         {
           breakpoint: 991,
           settings: {
