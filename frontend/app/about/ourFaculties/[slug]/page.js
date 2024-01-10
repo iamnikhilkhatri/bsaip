@@ -21,6 +21,7 @@ const Slug = (props) => {
 };
 
 export async function getStaticPaths() {
+  "use server";
   try {
     const result = await axios.get(`${API_URLS.faculties}`);
     console.log(result.data.data);
@@ -42,6 +43,7 @@ export async function getStaticPaths() {
 }
 
 export async function getServerSideProps({ params }) {
+  "use server";
   const apiUrl = `${API_URLS.faculties}?filters[slug]=${params.slug}&populate=*`;
 
   try {
